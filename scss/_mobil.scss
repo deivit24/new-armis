@@ -1,0 +1,55 @@
+// Wide Screens
+@include mediaXl {
+  .menu-btn {
+    display: none;
+  
+  }
+}
+
+@include mediaLg {
+.menu-btn {
+  display: none;
+
+}
+}
+
+@include mediaMd {
+  ul.menu-nav,
+  div.menu-branding{
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding{
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      
+      width: 250px;
+      height: 133px;
+    }
+  }
+}
+
+@include mediaSm {
+.menu {
+  .nav-link{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: .5rem 0;
+}
+}
+}
+

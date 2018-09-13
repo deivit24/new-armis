@@ -1,5 +1,26 @@
-$primary-color: #444;
+@import 'config';
+@import 'menu';
+
 
 body{
   background: $primary-color;
+  
+  
+  h1, h2, h3 {
+    font-family: $main-font;
+    color: $third-color;
+  }
+
+  p{
+    font-family: $secondary-font;
+    color: $third-color;
+  }
 }
+
+
+
+
+
+
+
+@import 'mobil';
