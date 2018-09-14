@@ -1,37 +1,61 @@
-// select DOM Items
+$(".menu-btn").on( "click", function() {
+  $(this).toggleClass("close");
+  $(".menu").toggleClass("show");
+  $(".menu-nav").toggleClass("show");
+  $(".menu-branding").toggleClass("show");
+  $(".nav-item").each(function(){
+  $(this).toggleClass("show");
+  });
+});
 
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-branding');
-const navItem = document.querySelectorAll('.nav-item');
+// // select DOM Items
 
-// set initial state of Menu
+// const menuBtn = document.querySelector('.menu-btn');
+// const menu = document.querySelector('.menu');
+// const menuNav = document.querySelector('.menu-nav');
+// const menuBranding = document.querySelector('.menu-branding');
+// const navItem = document.querySelectorAll('.nav-item');
 
-let showMenu = false;
+// // set initial state of Menu
 
-menuBtn.addEventListener('click', toggleMenu);
+// let showMenu = false;
 
-function toggleMenu() {
-  if (!showMenu) {
-    menuBtn.classList.add('close');
-    menu.classList.add('show');
-    menuNav.classList.add('show');
-    menuBranding.classList.add('show');
-    navItem.forEach(item => item.classList.add('show'));
+// menuBtn.addEventListener('click', toggleMenu);
 
-    // set menu state
-    showMenu = true;
-  } else {
-    menuBtn.classList.remove('close');
-    menu.classList.remove('show');
-    menuNav.classList.remove('show');
-    menuBranding.classList.remove('show');
-    navItem.forEach(item => item.classList.remove('show'));
+// function toggleMenu() {
+//   if (!showMenu) {
+//     menuBtn.classList.add('close');
+//     menu.classList.add('show');
+//     menuNav.classList.add('show');
+//     menuBranding.classList.add('show');
+//     navItem.forEach(item => item.classList.add('show'));
 
-    // set menu state
-    showMenu = false; 
+//     // set menu state
+//     showMenu = true;
+//   } else {
+//     menuBtn.classList.remove('close');
+//     menu.classList.remove('show');
+//     menuNav.classList.remove('show');
+//     menuBranding.classList.remove('show');
+//     navItem.forEach(item => item.classList.remove('show'));
 
+//     // set menu state
+//     showMenu = false; 
+
+//   }
+// }
+
+$(window).on('scroll', function () {
+  if ($(window).scrollTop()) {
+    $('.navbar').addClass('black');
+    $('.navbar-nav .nav-item .nav-link').addClass('color');
+    $('.logo').addClass('remove1');
   }
-}
-
+  else
+  {
+    $('.navbar').removeClass('black'); 
+    $('.navbar-nav .nav-item .nav-link').removeClass('color');
+    
+    $('.logo').removeClass('remove1');
+  }
+});
