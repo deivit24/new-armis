@@ -45,17 +45,57 @@ $(".menu-btn").on( "click", function() {
 //   }
 // }
 
-$(window).on('scroll', function () {
-  if ($(window).scrollTop()) {
-    $('.navbar').addClass('black');
-    $('.navbar-nav .nav-item .nav-link').addClass('color');
-    $('.logo').addClass('remove1');
-  }
-  else
-  {
-    $('.navbar').removeClass('black'); 
-    $('.navbar-nav .nav-item .nav-link').removeClass('color');
+// $(window).on('scroll', function () {
+//   if ($(window).scrollTop()) {
+//     $('.navbar').addClass('black');
+//     $('.navbar-nav .nav-item .nav-link').addClass('color');
     
-    $('.logo').removeClass('remove1');
-  }
-});
+    
+//   }
+//   else
+//   {
+//     $('.navbar').removeClass('black'); 
+//     $('.navbar-nav .nav-item .nav-link').removeClass('color');
+    
+    
+    
+//   }
+// });
+
+// init Scroll Magic
+var nav = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Controller();
+var navLink = new ScrollMagic.Controller();
+
+// build a scene
+var ourScene = new ScrollMagic.Scene({
+  triggerElement: '#trigger'
+})
+.setClassToggle('#project01','fade-in' ) 
+.addTo(scene);
+
+var navScroll = new ScrollMagic.Scene({
+  triggerElement: '#trigger'
+})
+
+.setClassToggle('.navbar', 'black')
+.addTo(nav);
+
+var linkScroll = new ScrollMagic.Scene({
+  triggerElement: '#trigger'
+})
+.setClassToggle('.nav-link', 'color')
+.addIndicators()
+.addTo(navLink);
+
+
+// wrapper animations
+
+var block1 = new ScrollMagic.Controller();
+
+var blockSlide1 = new ScrollMagic.Scene({
+  triggerElement: '#transstraight'
+})
+.setClassToggle('.block:nth-child(1)', 'slide')
+.addIndicators()
+.addTo(block1);

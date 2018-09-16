@@ -126,11 +126,14 @@ body {
   body p {
     font-family: "Lato", sans-serif;
     color: #333; }
+  body .navbar {
+    transition: all 1s ease-in-out; }
   body .navbar-nav .nav-item .nav-link {
     color: white;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.2rem;
-    margin-top: 50px; }
+    margin-top: 50px;
+    transition: all 1s ease-in-out; }
     body .navbar-nav .nav-item .nav-link:hover {
       color: #d89e04; }
   body .navbar-nav .nav-item .nav-login {
@@ -143,7 +146,7 @@ body {
 
 .black {
   background: white !important;
-  transition: 1s !important; }
+  transform: translateY(0) !important; }
 
 .color {
   line-height: 40px !important;
@@ -151,12 +154,18 @@ body {
   font-size: 20px !important;
   font-family: "Raleway", sans-serif !important;
   text-decoration: none;
-  transition: 1s !important;
+  transform: translateY(0) !important;
   margin-top: 0px !important; }
 
-.remove1 {
-  opacity: .01;
-  transition: 1s; }
+.project {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-out; }
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0); }
 
 header {
   position: fixed;
@@ -194,6 +203,44 @@ section.sec1 {
         background: white;
         cursor: pointer;
         font-family: "Raleway", sans-serif; }
+
+.wrapper1 {
+  padding: 0px;
+  margin: 50px auto; }
+  .wrapper1 .block {
+    margin-bottom: 50px; }
+    .wrapper1 .block:nth-child(1) {
+      height: 300px;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/transparent.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: all 1s ease-in-out; }
+      .wrapper1 .block:nth-child(1) #transstraight {
+        color: white;
+        text-align: center;
+        padding-top: 150px;
+        font-size: 2rem;
+        font-family: "Ubuntu", sans-serif; }
+        .wrapper1 .block:nth-child(1) #transstraight .gold {
+          color: #d89e04; }
+    .wrapper1 .block:nth-child(2) {
+      height: 300px;
+      width: auto;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mutualfunds.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .wrapper1 .block:nth-child(3) {
+      height: 300px;
+      width: auto;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/risk.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+  .wrapper1 .block.slide {
+    width: 50%; }
 
 @media screen and (min-width: 1171px) {
   .menu-btn {
