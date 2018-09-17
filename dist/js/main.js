@@ -91,11 +91,67 @@ var linkScroll = new ScrollMagic.Scene({
 
 // wrapper animations
 
-var block1 = new ScrollMagic.Controller();
+// transparent block
+var picblock = new ScrollMagic.Controller();
 
-var blockSlide1 = new ScrollMagic.Scene({
-  triggerElement: '#transstraight'
-})
-.setClassToggle('.block:nth-child(1)', 'slide')
-.addIndicators()
-.addTo(block1);
+$('.picblock').each(function () {
+  
+  var blockSlide = new ScrollMagic.Scene({
+    triggerElement: this
+  })
+  .setClassToggle(this, 'slide')
+  .addIndicators()
+  .addTo(picblock);
+
+});
+
+// gold text
+
+var picgold = new ScrollMagic.Controller();
+
+$('.gold').each(function () {
+  
+  var goldSlide = new ScrollMagic.Scene({
+    triggerElement: this
+  })
+  .setClassToggle(this, 'gold-appear')
+  .addIndicators()
+  .addTo(picgold);
+
+});
+
+// slide text appear
+
+var blocktext = new ScrollMagic.Controller();
+
+$('.textblock').each(function () {
+  
+  var textSlide = new ScrollMagic.Scene({
+    triggerElement: this
+  })
+  .setClassToggle(this, 'text-appear')
+  .addIndicators()
+  .addTo(blocktext);
+
+});
+
+// // gold text
+// var gold1 = new ScrollMagic.Controller();
+
+// var goldAppear1 = new ScrollMagic.Scene({
+//   triggerElement: '#transstraight'
+// })
+// .setClassToggle('.gold', 'appear')
+// .addIndicators()
+// .addTo(gold1);
+
+// // slide text appear
+// var text1 = new ScrollMagic.Controller();
+
+// var textAppear1 = new ScrollMagic.Scene({
+//   triggerElement: '#transstraight'
+// })
+// .setClassToggle('.transtext', 'appear2')
+// .addIndicators()
+// .addTo(text1);
+

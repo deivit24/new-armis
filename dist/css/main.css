@@ -206,41 +206,126 @@ section.sec1 {
 
 .wrapper1 {
   padding: 0px;
-  margin: 50px auto; }
-  .wrapper1 .block {
-    margin-bottom: 50px; }
-    .wrapper1 .block:nth-child(1) {
+  margin: 50px auto;
+  text-align: center;
+  vertical-align: middle; }
+  .wrapper1 .picblock {
+    margin-bottom: 75px;
+    text-align: center;
+    vertical-align: middle; }
+    .wrapper1 .picblock:nth-child(1) {
       height: 300px;
       width: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/transparent.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/transparent.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      opacity: 0;
+      transform: translateX(-500px);
+      transition: all 2s ease-out; }
+    .wrapper1 .picblock:nth-child(4) {
+      height: 300px;
+      width: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(34, 3, 3, 0.5)), url(../img/mutualfunds.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transform: translateX(500px);
+      transition: all 2s ease-out; }
+    .wrapper1 .picblock:nth-child(5) {
+      height: 300px;
+      width: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/risk.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transform: translateX(-500px);
+      opacity: 0;
+      transition: all 2s ease-out; }
+  .wrapper1 .picblock.slide {
+    transform: translateX(0px);
+    opacity: 1; }
+  .wrapper1 .pic-heading {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 125px;
+    font-family: "Ubuntu", sans-serif; }
+    .wrapper1 .pic-heading .gold {
+      color: #d89e04;
+      opacity: 0;
+      background-blend-mode: darken;
+      font-size: 1.8rem;
       transition: all 1s ease-in-out; }
-      .wrapper1 .block:nth-child(1) #transstraight {
-        color: white;
+    .wrapper1 .pic-heading .gold-appear {
+      opacity: 1; }
+  .wrapper1 .textblock {
+    text-align: center;
+    transition: all 2s ease-in-out;
+    font-size: 0rem;
+    margin-top: 50px;
+    opacity: 0; }
+  .wrapper1 .text-appear {
+    transform: translateY(0px);
+    opacity: 1;
+    font-size: 1.3rem; }
+
+.wrapper2 {
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fees.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .wrapper2 h1 {
+    color: white;
+    text-align: center;
+    padding-top: 225px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+  .wrapper2 .btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    font-family: "Lato", sans-serif; }
+    .wrapper2 .btn:hover {
+      cursor: pointer;
+      background: white;
+      color: black;
+      font-weight: bold; }
+
+.wrapper3 {
+  height: 300px;
+  background: #333;
+  border-top: 2px solid #d89e04;
+  border-bottom: 2px solid #d89e04; }
+  .wrapper3 .row {
+    margin: 50px auto 30px auto;
+    justify-content: center; }
+    .wrapper3 .row .col-xs-3 {
+      text-align: center;
+      justify-content: center; }
+      .wrapper3 .row .col-xs-3 a {
+        font-size: 50px;
+        padding: 15px;
         text-align: center;
-        padding-top: 150px;
-        font-size: 2rem;
-        font-family: "Ubuntu", sans-serif; }
-        .wrapper1 .block:nth-child(1) #transstraight .gold {
-          color: #d89e04; }
-    .wrapper1 .block:nth-child(2) {
-      height: 300px;
-      width: auto;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mutualfunds.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
-    .wrapper1 .block:nth-child(3) {
-      height: 300px;
-      width: auto;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/risk.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
-  .wrapper1 .block.slide {
-    width: 50%; }
+        color: white;
+        transition: 1s; }
+        .wrapper3 .row .col-xs-3 a:hover {
+          cursor: pointer;
+          font-size: 60px;
+          transition: 1s;
+          color: #3B5998; }
+  .wrapper3 p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem; }
+
+footer {
+  text-align: center;
+  padding-top: 50px; }
 
 @media screen and (min-width: 1171px) {
   .menu-btn {

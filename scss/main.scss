@@ -135,59 +135,172 @@ section.sec1{
 .wrapper1 {
   padding: 0px;
   margin: 50px auto;
-
-  .block {
-    margin-bottom: 50px;
+  text-align: center;
+  vertical-align: middle;
+ 
+// pictures on block css and animation
+  .picblock {
+    margin-bottom: 75px;
+    text-align: center;
+    vertical-align: middle;
 
     &:nth-child(1){
       height: 300px;
       width: 100%;
-      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/transparent.jpg);
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/transparent.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      opacity: 0;
+      transform: translateX(-500px);
+      transition: all 2s ease-out;
+    }
+
+    &:nth-child(4){
+      height: 300px;
+      width: 100%;
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(34, 3, 3, 0.5) ), url(../img/mutualfunds.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transform: translateX(500px);
+      transition: all 2s ease-out;
+    }
+
+    &:nth-child(5){
+      height: 300px;
+      width: 100%;
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/risk.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transform: translateX(-500px);
+      opacity: 0;
+      transition: all 2s ease-out;
+    }
+
+    
+  }
+  .picblock.slide {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .pic-heading{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top:125px;
+    font-family: $main-font;
+
+    .gold{
+      color: $secondary-color;
+      opacity:0 ;
+      background-blend-mode: darken;
+      font-size: 1.8rem;
       transition: all 1s ease-in-out;
       
-      
-      #transstraight {
-        color:white;
+
+    }
+    .gold-appear {
+      opacity: 1;
+    }
+  }
+
+  .textblock{
+    text-align: center;
+    
+    transition: all 2s ease-in-out;
+    font-size: 0rem;
+    margin-top: 50px;
+    opacity: 0;
+  }
+
+  .text-appear{
+    transform: translateY(0px);
+    opacity: 1;
+    font-size: 1.3rem;
+  }
+}
+
+.wrapper2{
+  height:500px;
+  width: 100%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/fees.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  h1{
+    color: white;
+    text-align: center;
+    padding-top:225px;
+    text-shadow: $shadow;
+  }
+
+  .btn {
+    background: transparent;
+    color:white;
+    border: 1px solid white;
+    text-align: center;
+    font-family: $secondary-font;
+
+    &:hover{
+      cursor: pointer;
+      background: white;
+      color: black;
+      font-weight: bold;
+
+    }
+  }
+}
+
+.wrapper3{
+  height: 300px;
+  background: $third-color;
+  border-top: 2px solid $secondary-color;
+  border-bottom: 2px solid $secondary-color;
+
+  .row{
+    margin: 50px auto 30px auto;
+    justify-content: center;
+   
+    .col-xs-3{
+      text-align: center;
+      justify-content: center;
+
+      a{
+        font-size: 50px;
+        padding: 15px;
         text-align: center;
-        padding-top: 150px;
-        font-size: 2rem;
-        font-family: $main-font;
-        .gold{
-          color: $secondary-color;
+        color: white;
+        transition: 1s;
+       
+
+        &:hover{
+          cursor: pointer;
+          font-size: 60px;
+          transition: 1s;
+          color:#3B5998;
         }
+    
+    
       }
-      
     }
-    &:nth-child(2){
-      height: 300px;
-      width: auto;
-      background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/mutualfunds.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      
-    }
-    &:nth-child(3){
-      height: 300px;
-      width: auto;
-      background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/risk.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    
-  }
-  .block.slide{
-    
-    width: 50%;
-    
-    
   }
 
+  p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+footer{
+  text-align: center;
+  padding-top: 50px;
 }
 
 
