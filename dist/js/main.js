@@ -85,7 +85,7 @@ var linkScroll = new ScrollMagic.Scene({
   triggerElement: '#trigger'
 })
 .setClassToggle('.nav-link', 'color')
-.addIndicators()
+
 .addTo(navLink);
 
 
@@ -100,7 +100,7 @@ $('.picblock').each(function () {
     triggerElement: this
   })
   .setClassToggle(this, 'slide')
-  .addIndicators()
+  
   .addTo(picblock);
 
 });
@@ -115,7 +115,7 @@ $('.gold').each(function () {
     triggerElement: this
   })
   .setClassToggle(this, 'gold-appear')
-  .addIndicators()
+  
   .addTo(picgold);
 
 });
@@ -130,7 +130,7 @@ $('.textblock').each(function () {
     triggerElement: this
   })
   .setClassToggle(this, 'text-appear')
-  .addIndicators()
+  
   .addTo(blocktext);
 
 });
@@ -142,7 +142,7 @@ $('.textblock').each(function () {
 //   triggerElement: '#transstraight'
 // })
 // .setClassToggle('.gold', 'appear')
-// .addIndicators()
+// 
 // .addTo(gold1);
 
 // // slide text appear
@@ -152,6 +152,6 @@ $('.textblock').each(function () {
 //   triggerElement: '#transstraight'
 // })
 // .setClassToggle('.transtext', 'appear2')
-// .addIndicators()
+// 
 // .addTo(text1);
 

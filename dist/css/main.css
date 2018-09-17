@@ -353,7 +353,18 @@ footer {
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       width: 180px;
-      height: 96px; } }
+      height: 96px; }
+  * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important; } }
 
 @media screen and (max-width: 500px) {
   .menu .nav-link {
