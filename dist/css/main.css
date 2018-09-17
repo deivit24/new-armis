@@ -7,6 +7,13 @@
   z-index: -1;
   background: rgba(255, 255, 255, 0.9); }
 
+.dropdown:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown-menu a:hover {
+  color: #d89e04;
+  font-weight: bold; }
+
 .menu-btn {
   position: absolute;
   top: 35px;
@@ -118,6 +125,73 @@
 .nav-item:nth-child(7) {
   transition-delay: 0.7s; }
 
+#about-firm .navbar-brand {
+  margin-top: -12px; }
+
+#about-firm .current {
+  color: #d89e04 !important;
+  font-weight: bold !important; }
+
+#about-firm .navbar .nav-item .nav-link {
+  color: black; }
+  #about-firm .navbar .nav-item .nav-link:hover {
+    color: #d89e04;
+    border-bottom: 2px solid black; }
+
+#about-firm .wrapper1 {
+  margin-top: 100px;
+  transition: all 1s ease-in-out; }
+  #about-firm .wrapper1 h1 {
+    padding-top: 50px;
+    transition: all 1s ease-in-out; }
+  #about-firm .wrapper1 h2 {
+    color: gray;
+    font-family: "Lato", sans-serif;
+    transition: all 1s ease-in-out; }
+
+#about-firm .sec2 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/360.jpg);
+  background-size: cover;
+  background-position: top; }
+
+#about-firm main h1 {
+  text-align: center;
+  margin: 50px 0px; }
+
+#about-firm main .text {
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: all 1s ease-in;
+  transform: translateY(100px); }
+
+#about-firm main .heading {
+  opacity: 0;
+  transition: all 1s ease-in;
+  transform: translateX(-100px);
+  margin-bottom: 25px; }
+
+#about-firm main .heading-appear {
+  opacity: 1;
+  transform: translateX(0px); }
+
+#about-firm main .text-appear {
+  opacity: 1;
+  transform: translateY(0px); }
+
+#about-firm main .list {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 1s ease-in; }
+  #about-firm main .list li {
+    margin-bottom: 15px; }
+
+#about-firm main .list-appear {
+  opacity: 1; }
+
 body {
   background: #fff; }
   body h1, body h2, body h3 {
@@ -127,12 +201,15 @@ body {
     font-family: "Lato", sans-serif;
     color: #333; }
   body .navbar {
-    transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out;
+    padding-top: 50px; }
+    body .navbar .current {
+      color: #d89e04; }
   body .navbar-nav .nav-item .nav-link {
     color: white;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.2rem;
-    margin-top: 50px;
+    margin-top: 0px;
     transition: all 1s ease-in-out; }
     body .navbar-nav .nav-item .nav-link:hover {
       color: #d89e04; }
@@ -142,7 +219,8 @@ body {
     border-radius: 20px; }
     body .navbar-nav .nav-item .nav-login:hover {
       background: #fff;
-      color: black; }
+      color: black;
+      border: 1px solid black; }
 
 .black {
   background: white !important;
@@ -156,6 +234,9 @@ body {
   text-decoration: none;
   transform: translateY(0) !important;
   margin-top: 0px !important; }
+  .color:hover {
+    cursor: pointer;
+    color: #d89e04 !important; }
 
 .project {
   text-align: center;
@@ -231,7 +312,7 @@ section.sec1 {
       background-size: cover;
       background-position: center;
       opacity: 0;
-      transform: translateX(500px);
+      transform: translateX(0px);
       transition: all 2s ease-out; }
     .wrapper1 .picblock:nth-child(5) {
       height: 300px;
@@ -264,12 +345,20 @@ section.sec1 {
     text-align: center;
     transition: all 2s ease-in-out;
     font-size: 0rem;
-    margin-top: 50px;
+    margin-top: 25px;
     opacity: 0; }
   .wrapper1 .text-appear {
     transform: translateY(0px);
     opacity: 1;
     font-size: 1.3rem; }
+  .wrapper1 .btn {
+    background: transparent;
+    border: 1px solid black;
+    color: black; }
+    .wrapper1 .btn:hover {
+      background: #d89e04;
+      cursor: pointer;
+      color: white; }
 
 .wrapper2 {
   height: 500px;
@@ -333,7 +422,13 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .menu-btn {
-    display: none; } }
+    display: none; }
+  section.sec1 .middle {
+    padding-top: 25%; }
+  .wrapper1 p {
+    font-size: 1rem; }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem !important; } }
 
 @media screen and (max-width: 768px) {
   ul.menu-nav,
@@ -354,7 +449,19 @@ footer {
     .menu-branding .portrait {
       width: 180px;
       height: 96px; }
-  * {
+  section.sec1 .middle {
+    padding-top: 25%; }
+  .wrapper1 p {
+    font-size: 1rem; }
+  .navbar {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  .menu .nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: .5rem 0; }
+  #main * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -o-transition: none !important;
@@ -365,9 +472,3 @@ footer {
     -o-transform: none !important;
     -ms-transform: none !important;
     transform: none !important; } }
-
-@media screen and (max-width: 500px) {
-  .menu .nav-link {
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: .5rem 0; } }

@@ -97,10 +97,12 @@ var picblock = new ScrollMagic.Controller();
 $('.picblock').each(function () {
   
   var blockSlide = new ScrollMagic.Scene({
-    triggerElement: this
+    triggerElement: this,
+    reverse: false
+
   })
   .setClassToggle(this, 'slide')
-  
+  .addIndicators()
   .addTo(picblock);
 
 });
@@ -127,7 +129,8 @@ var blocktext = new ScrollMagic.Controller();
 $('.textblock').each(function () {
   
   var textSlide = new ScrollMagic.Scene({
-    triggerElement: this
+    triggerElement: this,
+    reverse: false
   })
   .setClassToggle(this, 'text-appear')
   

@@ -1,5 +1,7 @@
 @import 'config';
 @import 'menu';
+@import 'aboutfirm';
+
 
 
 body{
@@ -18,16 +20,22 @@ body{
 
   .navbar {
     transition: all 1s ease-in-out;
+    padding-top: 50px;
+
+    .current{
+      color: $secondary-color;
+    }
   }
   .navbar-nav .nav-item .nav-link{
     color: white;
     font-family: $main-font;
     font-size: 1.2rem;
-    margin-top: 50px;
+    margin-top: 0px;
     transition: all 1s ease-in-out;
     &:hover{
       color: $secondary-color;
     }
+    
 
     
   }
@@ -39,6 +47,7 @@ body{
     &:hover{
       background: $primary-color;
       color: black;
+      border: 1px solid black;
     }
   }
 
@@ -61,6 +70,10 @@ body{
   transform: translateY(0) !important;
   
   margin-top:0px !important;
+  &:hover{
+    cursor: pointer;
+    color: $secondary-color !important
+  }
 
 }
 
@@ -164,7 +177,7 @@ section.sec1{
       background-size: cover;
       background-position: center;
       opacity: 0;
-      transform: translateX(500px);
+      transform: translateX(0px);
       transition: all 2s ease-out;
     }
 
@@ -213,7 +226,7 @@ section.sec1{
     
     transition: all 2s ease-in-out;
     font-size: 0rem;
-    margin-top: 50px;
+    margin-top: 25px;
     opacity: 0;
   }
 
@@ -221,6 +234,17 @@ section.sec1{
     transform: translateY(0px);
     opacity: 1;
     font-size: 1.3rem;
+  }
+
+  .btn {
+    background:transparent;
+    border: 1px solid black;
+    color: black;
+    &:hover{
+      background: $secondary-color;
+      cursor: pointer;
+      color: white;
+    }
   }
 }
 

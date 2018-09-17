@@ -11,6 +11,21 @@
   display: none;
 
 }
+section.sec1 {
+  .middle{
+    padding-top: 25%;
+  }
+}
+.wrapper1 {
+  p{
+    font-size: 1rem;
+  }
+}
+.navbar-nav .nav-item .nav-link{
+  font-size: 1rem !important;
+}
+
+
 }
 
 @include mediaMd {
@@ -42,21 +57,22 @@
     }
   }
 
+  section.sec1 {
+    .middle{
+      padding-top: 25%;
+    }
+  }
+  
   
 
-  *{
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-    -webkit-transform: none !important;
-    -moz-transform: none !important;
-    -o-transform: none !important;
-    -ms-transform: none !important;
-    transform: none !important;
-    
-    
+  .wrapper1 {
+    p{
+      font-size: 1rem;
+    }
+  }
+
+  .navbar {
+    display: none;
   }
 }
 
@@ -67,6 +83,21 @@
     text-transform: uppercase;
     padding: .5rem 0;
 }
+}
+
+#main *{
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+  
+  
 }
 }
 
