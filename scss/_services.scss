@@ -1,3 +1,310 @@
 #services{
-  background: blue;
+  .service{
+    padding: 50px 0px;
+    
+    p{
+      font-family: $footer-font;
+      font-size: 1.5rem;
+
+    }
+  }
+ .grid1{
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: 2fr 1fr 1fr;
+   margin: 10px 0;
+
+   .serv{
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    display: table;
+    &:nth-child(1){
+      transition: all 1s ease-in;
+      background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/portfolio.jpg);
+ 
+      background-size: cover;
+      background-position: center;
+      &:hover{
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/portfolio.jpg);
+        background-size: cover;
+      background-position: top;
+        h3{
+          transition: all 1s ease-in-out;
+          color: darken($secondary-color, 10);
+          .btn{
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+            }
+    }
+    &:nth-child(2){
+      transition: all 1s ease-in;
+      background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/solution.jpg);
+ 
+      background-size: cover;
+      background-position: center;
+      &:hover{
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/solution.jpg);
+        background-size: cover;
+      background-position: top;
+        h3{
+          transition: all 1s ease-in-out;
+          color: darken($secondary-color, 10);
+          .btn{
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+            }
+    }
+    &:nth-child(3){
+      transition: all 1s ease-in;
+      background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/planning.jpg);
+ 
+      background-size: cover;
+      background-position: center;
+      &:hover{
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/planning.jpg);
+        background-size: cover;
+      background-position: top;
+        h3{
+          transition: all 1s ease-in-out;
+          color: darken($secondary-color, 10);
+          .btn{
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+            }
+    }
+    
+    h3{
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      color: white;  
+      
+      
+      .btn{
+        text-align: center;
+        color: white;
+        border: 1px solid white;
+        margin-top:10px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1s ease-in-out;
+        &:hover{
+          background: white;
+          color: black;
+          
+        }
+   
+      }
+    }
+    
+   }  
+ }
+
+ .grid2{
+  margin: 10px 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  .serv{
+   height: 200px;
+   width: 100%;
+   border: 1px solid black;
+   display: table;
+
+   &:nth-child(1){
+     transition: all 1s ease-in;
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/income.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    &:hover{
+      background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/income.jpg);
+      background-size: cover;
+    background-position: top;
+      h3{
+        transition: all 1s ease-in-out;
+        color: darken($secondary-color, 10);
+        .btn{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+          }
+   }
+   &:nth-child(2){
+    transition: all 1s ease-in;
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/retirement.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    &:hover{
+      background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/retirement.jpg);
+      background-size: cover;
+    background-position: top;
+      h3{
+        transition: all 1s ease-in-out;
+        color: darken($secondary-color, 10);
+        .btn{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+          }
+   }
+   &:nth-child(3){
+     transition: all 1s ease-in;
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/withdraw.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    &:hover{
+      background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/withdraw.jpg);
+      background-size: cover;
+    background-position: top;
+      h3{
+        transition: all 1s ease-in-out;
+        color: darken($secondary-color, 10);
+        .btn{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+          }
+   }
+   
+   h3{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+
+    .btn{
+      text-align: center;
+      color: white;
+      border: 1px solid white;
+      margin-top:10px;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: all 1s ease-in-out;
+      &:hover{
+        background: white;
+        color: black;
+        
+      }
+ 
+    }
+    
+  }
+  }
+ 
+ 
+}
+
+.grid3{
+  margin: 10px 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 2fr;
+
+  .serv{
+   height: 200px;
+   width: 100%;
+   border: 1px solid black;
+   display: table;
+   &:nth-child(1){
+     transition: all 1s ease-in;
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/income.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    &:hover{
+      background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/income.jpg);
+      background-size: cover;
+    background-position: top;
+      h3{
+        transition: all 1s ease-in-out;
+        color: darken($secondary-color, 10);
+        .btn{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+          }
+   }
+   &:nth-child(2){
+     transition: all 1s ease-in;
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/rebalance.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    &:hover{
+      background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/rebalance.jpg);
+      background-size: cover;
+    background-position: top;
+      h3{
+        transition: all 1s ease-in-out;
+        color: darken($secondary-color, 10);
+        .btn{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+          }
+   }
+   &:nth-child(3){
+     transition: all 1s ease-in;
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ),url(../img/service/transfer.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    &:hover{
+      background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70) ),url(../img/service/transfer.jpg);
+      background-size: cover;
+    background-position: top;
+      h3{
+        transition: all 1s ease-in-out;
+        color: darken($secondary-color, 10);
+        .btn{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+          }
+   }
+
+   h3{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+
+    .btn{
+      text-align: center;
+      color: white;
+      border: 1px solid white;
+      margin-top:10px;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: all 1s ease-in-out;
+      &:hover{
+        background: white;
+        color: black;
+        
+      }
+ 
+    }
+    
+    
+  }
+  }
+  
+}
 }

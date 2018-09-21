@@ -74,6 +74,49 @@ section.sec1 {
   .navbar {
     display: none;
   }
+
+  #services{
+    .grid1{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+   
+      .serv{
+      
+       height: 300px;
+       width: 100%;
+       border: 1px solid black;
+      }
+      
+    }
+    .grid2{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+   
+      .serv{
+      
+       height: 300px;
+       width: 100%;
+       border: 1px solid black;
+      }
+      
+    }
+    .grid3{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+   
+      .serv{
+      
+       height: 300px;
+       width: 100%;
+       border: 1px solid black;
+      }
+      
+    }
+     
+   }
 }
 
 @include mediaSm {
