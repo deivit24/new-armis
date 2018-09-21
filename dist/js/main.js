@@ -102,7 +102,7 @@ $('.picblock').each(function () {
 
   })
   .setClassToggle(this, 'slide')
-  .addIndicators()
+  
   .addTo(picblock);
 
 });
