@@ -1,53 +1,45 @@
-
-#about-firm{
-  
-  .navbar-brand{
+#about-firm {
+  .navbar-brand {
     margin-top: -12px;
   }
-  .current{
+  .current {
     color: $secondary-color !important;
     font-weight: bold !important;
   }
-  .navbar .nav-item .nav-link{
+  .navbar .nav-item .nav-link {
     color: black;
-    &:hover{
-      color:$secondary-color;
+    &:hover {
+      color: $secondary-color;
       border-bottom: 2px solid black;
     }
-    
   }
-  .wrapper1{
+  .wrapper1 {
     margin-top: 0px;
     padding-top: 100px;
     transition: all 1s ease-in-out;
-    .image{
+    .image {
       opacity: 0;
       transition: all 1s ease-in-out;
       transform: translateY(50px);
-
     }
-    .image-appear{
+    .image-appear {
       transform: translateY(0px);
       opacity: 1;
     }
-   
-    
-    .title{
+
+    .title {
       font-family: $secondary-font;
       transition: all 0.5s ease-in-out;
       transform: translateY(-50px);
       opacity: 0;
-      
-
     }
-    .title-appear{
+    .title-appear {
       opacity: 1;
       transform: translateY(0px);
     }
-    
   }
- 
-  .sec2{
+
+  .sec2 {
     width: 100%;
     height: 600px;
     background: url(../img/360.jpg);
@@ -55,207 +47,214 @@
     background-size: cover;
     background-position: top;
   }
-  .sec3{
+  .sec3 {
     width: 100%;
     height: 600px;
-    background:linear-gradient( rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.50) ), url(../img/bike.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.5)),
+      url(../img/bike.jpg);
 
     background-size: cover;
     background-position: bottom;
   }
 
-  
-
   main {
-    h1{
+    h1 {
       text-align: center;
-      margin:50px 0px;
+      margin: 50px 0px;
     }
 
-    .text{
+    .text {
       margin-bottom: 50px;
       font-size: 1.2rem;
       opacity: 0;
       transition: all 0.5s ease-in;
       transform: translateY(100px);
     }
-    .heading{
+    .heading {
       opacity: 0;
       transition: all 0.5s ease-in;
       transform: translateX(-100px);
       margin-bottom: 25px;
     }
-    .heading-appear{
+    .heading-appear {
       opacity: 1;
-      transform: translateX(0px)
+      transform: translateX(0px);
     }
-    .text-appear{
+    .text-appear {
       opacity: 1;
       transform: translateY(0px);
     }
-    .list{
+    .list {
       font-family: $footer-font;
       font-weight: bold;
       opacity: 0;
       transition: all 0.5s ease-in;
-      li{
+      li {
         margin-bottom: 15px;
       }
     }
-    .list-appear{
+    .list-appear {
       opacity: 1;
     }
-    .block{
+    .block {
       text-align: center;
 
-      .bio-heading{
+      .bio-heading {
         margin-bottom: 0px;
         font-family: $secondary-font;
-
       }
-      h3{
+      h3 {
         color: darken($secondary-color, 10);
         margin-bottom: 50px;
       }
 
-      .bio-headings{
+      .bio-headings {
         transition: all 1s ease-in-out;
         transform: translateX(200px);
         opacity: 0;
-
-        
       }
 
-      .bio-headings-appear{
+      .bio-headings-appear {
         transform: translateX(0px);
         opacity: 1;
       }
-      .image{
-        text-align: center ;
+      .image {
+        text-align: center;
         margin-top: 50px;
         border-radius: 50%;
         border: 2px solid darken($secondary-color, 10);
         transition: all 1s ease-in-out;
-        transform: translateX(-200px) ;
-        opacity: 0 ;
-
-      }
-      .bio-img-appear{
-        transform: translateX(0px) ;
-        opacity: 1 ;
-      }
-      
-    }
-   
-  }
- 
-}
-
-#about-process{
-  .navbar-brand{
-    margin-top: -12px;
-  }
-  .current{
-    color: $secondary-color !important;
-    font-weight: bold !important;
-  }
-  .navbar .nav-item .nav-link{
-    color: black;
-    &:hover{
-      color:$secondary-color;
-      border-bottom: 2px solid black;
-    }
-    
-  }
-
-  .wrapper1{
-   margin-top: 0px;
-    padding-top: 100px;
-    transition: all 1s ease-in-out;
-    .image{
-      opacity: 0;
-      transition: all 1s ease-in-out;
-      transform: translateY(50px);
-
-    }
-    .image-appear{
-      transform: translateY(0px);
-      opacity: 1;
-    }
-   
-    
-    .title{
-      font-family: $secondary-font;
-      transition: all 0.5s ease-in-out;
-      transform: translateY(-50px);
-      opacity: 0;
-      
-
-    }
-    .title-appear{
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-  
-    .sec4{
-      width: 100%;
-      height: 600px;
-      background:linear-gradient( rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.50) ), url(../img/process.jpg);
-  
-      background-size: cover;
-      background-position: bottom;
-    }
-
-    .sec5{
-      width: 100%;
-      height: 300px;
-      background:linear-gradient( rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.50) ), url(../img/service.jpg);
-  
-      background-size: cover;
-      background-position: center;
-    }
-  
-    #process{
-
-      h1{
-        text-align: center;
-        margin: 50px 0px 25px 0px;
-      }
-      p{
-        text-align: center;
-        padding: 0 10%;
-        margin-bottom: 20px;
-      }
-      .gold-step{
-        color: darken($secondary-color, 10);
-        font-size: 1.5rem;
-      }
-
-      .left{
-        padding:10% 0;
-        text-align: center;
-        vertical-align: middle;
-        background: #f4f4f4;
-        opacity: 0;
-        transition: all 1s ease-in-out;
         transform: translateX(-200px);
-        border-bottom: 2px solid darken($secondary-color,  10);
-        
-      }
-      .right{
-        padding:10%;
-        text-align: center;
-        vertical-align: middle;
         opacity: 0;
-        transition: all 1s ease-in-out;
-        transform: translateX(200px);
-        background: #f4f4f4;
-        border-bottom: 2px solid darken($secondary-color,  10);
       }
-      .step-appear {
+      .bio-img-appear {
         transform: translateX(0px);
         opacity: 1;
       }
     }
+  }
+}
+
+#about-process {
+  .navbar-brand {
+    margin-top: -12px;
+  }
+  .current {
+    color: $secondary-color !important;
+    font-weight: bold !important;
+  }
+  .navbar .nav-item .nav-link {
+    color: black;
+    &:hover {
+      color: $secondary-color;
+      border-bottom: 2px solid black;
+    }
+  }
+
+  .wrapper1 {
+    margin-top: 0px;
+    padding-top: 100px;
+    transition: all 1s ease-in-out;
+    .image {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: translateY(50px);
+    }
+    .image-appear {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    .title {
+      font-family: $secondary-font;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    .title-appear {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .sec4 {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.5)),
+      url(../img/process.jpg);
+
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .sec5 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.5)),
+      url(../img/service.jpg);
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sec6 {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.5)),
+      url(../img/fixed-income.jpg);
+
+    background-size: cover;
+    background-position: center;
+  }
+  .sec7 {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.5)),
+      url(../img/retirement.jpg);
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  #process {
+    h1 {
+      text-align: center;
+      margin: 50px 0px 25px 0px;
+    }
+    p {
+      text-align: center;
+      padding: 0 10%;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    .gold-step {
+      color: darken($secondary-color, 10);
+      font-size: 1.5rem;
+    }
+
+    .left {
+      padding: 10% 0;
+      text-align: center;
+      vertical-align: middle;
+      background: #f4f4f4;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: translateX(-200px);
+      border-bottom: 2px solid darken($secondary-color, 10);
+    }
+    .right {
+      padding: 10%;
+      text-align: center;
+      vertical-align: middle;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: translateX(200px);
+      background: #f4f4f4;
+      border-bottom: 2px solid darken($secondary-color, 10);
+    }
+    .step-appear {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
 }
