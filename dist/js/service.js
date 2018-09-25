@@ -64,3 +64,25 @@ $('.fi-block').each(function() {
 
     .addTo(fiBlock);
 });
+
+var rpLeftBlock = new ScrollMagic.Controller();
+
+$('.left').each(function() {
+  var rpLeftSlide = new ScrollMagic.Scene({
+    triggerElement: this
+  })
+    .setClassToggle(this, 'rp-appear')
+    .addIndicators()
+    .addTo(rpLeftBlock);
+});
+
+var rpRightBlock = new ScrollMagic.Controller();
+
+$('.right').each(function() {
+  var rpRightSlide = new ScrollMagic.Scene({
+    triggerElement: this
+  })
+    .setClassToggle(this, 'rp-appear')
+    .addIndicators()
+    .addTo(rpRightBlock);
+});

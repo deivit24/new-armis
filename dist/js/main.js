@@ -1,10 +1,10 @@
-$(".menu-btn").on( "click", function() {
-  $(this).toggleClass("close");
-  $(".menu").toggleClass("show");
-  $(".menu-nav").toggleClass("show");
-  $(".menu-branding").toggleClass("show");
-  $(".nav-item").each(function(){
-  $(this).toggleClass("show");
+$('.menu-btn').on('click', function() {
+  $(this).toggleClass('close');
+  $('.menu').toggleClass('show');
+  $('.menu-nav').toggleClass('show');
+  $('.menu-branding').toggleClass('show');
+  $('.nav-item').each(function() {
+    $(this).toggleClass('show');
   });
 });
 
@@ -40,7 +40,7 @@ $(".menu-btn").on( "click", function() {
 //     navItem.forEach(item => item.classList.remove('show'));
 
 //     // set menu state
-//     showMenu = false; 
+//     showMenu = false;
 
 //   }
 // }
@@ -49,16 +49,13 @@ $(".menu-btn").on( "click", function() {
 //   if ($(window).scrollTop()) {
 //     $('.navbar').addClass('black');
 //     $('.navbar-nav .nav-item .nav-link').addClass('color');
-    
-    
+
 //   }
 //   else
 //   {
-//     $('.navbar').removeClass('black'); 
+//     $('.navbar').removeClass('black');
 //     $('.navbar-nav .nav-item .nav-link').removeClass('color');
-    
-    
-    
+
 //   }
 // });
 
@@ -71,71 +68,63 @@ var navLink = new ScrollMagic.Controller();
 var ourScene = new ScrollMagic.Scene({
   triggerElement: '#trigger'
 })
-.setClassToggle('#project01','fade-in' ) 
-.addTo(scene);
+  .setClassToggle('#project01', 'fade-in')
+  .addTo(scene);
 
 var navScroll = new ScrollMagic.Scene({
   triggerElement: '#trigger'
 })
 
-.setClassToggle('.navbar', 'black')
-.addTo(nav);
+  .setClassToggle('.navbar', 'black')
+  .addTo(nav);
 
 var linkScroll = new ScrollMagic.Scene({
   triggerElement: '#trigger'
 })
-.setClassToggle('.nav-link', 'color')
+  .setClassToggle('.nav-link', 'color')
 
-.addTo(navLink);
-
+  .addTo(navLink);
 
 // wrapper animations
 
 // transparent block
 var picblock = new ScrollMagic.Controller();
 
-$('.picblock').each(function () {
-  
+$('.picblock').each(function() {
   var blockSlide = new ScrollMagic.Scene({
     triggerElement: this,
     reverse: false
-
   })
-  .setClassToggle(this, 'slide')
-  
-  .addTo(picblock);
+    .setClassToggle(this, 'slide')
 
+    .addTo(picblock);
 });
 
 // gold text
 
 var picgold = new ScrollMagic.Controller();
 
-$('.gold').each(function () {
-  
+$('.gold').each(function() {
   var goldSlide = new ScrollMagic.Scene({
     triggerElement: this
   })
-  .setClassToggle(this, 'gold-appear')
-  
-  .addTo(picgold);
+    .setClassToggle(this, 'gold-appear')
 
+    .addTo(picgold);
 });
 
 // slide text appear
 
 var blocktext = new ScrollMagic.Controller();
 
-$('.textblock').each(function () {
-  
+$('.textblock').each(function() {
   var textSlide = new ScrollMagic.Scene({
     triggerElement: this,
     reverse: false
   })
-  .setClassToggle(this, 'text-appear')
-  
-  .addTo(blocktext);
+    .setClassToggle(this, 'text-appear')
 
+    .addTo(blocktext);
 });
 
 // // gold text
@@ -145,7 +134,7 @@ $('.textblock').each(function () {
 //   triggerElement: '#transstraight'
 // })
 // .setClassToggle('.gold', 'appear')
-// 
+//
 // .addTo(gold1);
 
 // // slide text appear
@@ -155,6 +144,5 @@ $('.textblock').each(function () {
 //   triggerElement: '#transstraight'
 // })
 // .setClassToggle('.transtext', 'appear2')
-// 
+//
 // .addTo(text1);
-

@@ -449,6 +449,9 @@
         border-bottom: 2px $secondary-color solid;
         border-top: 2px $secondary-color solid;
         border-left: 2px $secondary-color solid;
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        transform: translateX(-200px);
 
         h1 {
           display: table-cell;
@@ -465,12 +468,51 @@
         border-bottom: 2px $secondary-color solid;
         border-top: 2px $secondary-color solid;
         border-right: 2px $secondary-color solid;
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        transform: translateX(200px);
 
         p {
           display: table-cell;
           vertical-align: middle;
           font-family: $footer-font;
           font-size: 1.2rem;
+        }
+      }
+      .rp-appear {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#withdrawing {
+  background: url(../img/background.jpg) top center no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+
+  .withdraw {
+    p {
+      padding: 50px 0px;
+      font-size: 1.3rem;
+    }
+
+    .accordion {
+      background: white;
+      margin-bottom: 100px;
+      h5 {
+        text-align: center;
+
+        .btn-link {
+          text-decoration: none;
+          color: black;
+          text-align: center;
+          font-family: $main-font;
+          font-size: 1.5rem;
+          &:hover {
+            color: darken($secondary-color, 10);
+          }
         }
       }
     }
