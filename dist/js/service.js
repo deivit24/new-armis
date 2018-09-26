@@ -83,6 +83,18 @@ $('.right').each(function() {
     triggerElement: this
   })
     .setClassToggle(this, 'rp-appear')
-    .addIndicators()
+
     .addTo(rpRightBlock);
+});
+
+var eBlock = new ScrollMagic.Controller();
+
+$('.e-block').each(function() {
+  var eBlockSlide = new ScrollMagic.Scene({
+    triggerElement: this,
+    triggerHook: 0.9
+  })
+    .setClassToggle(this, 'e-block-appear')
+    .addIndicators()
+    .addTo(eBlock);
 });

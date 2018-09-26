@@ -303,6 +303,21 @@
   background-size: cover;
   background-position: top; }
 
+#about-process .sec9 {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/equity.jpg);
+  background-size: cover;
+  background-position: center; }
+
+#about-process .sec10 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/rebalance.gif);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center; }
+
 #about-process #process h1 {
   text-align: center;
   margin: 50px 0px 25px 0px; }
@@ -710,6 +725,30 @@
         font-size: 1.5rem; }
         #withdrawing .withdraw .accordion h5 .btn-link:hover {
           color: #a67903; }
+
+#equity {
+  background: url(../img/background.jpg) top center no-repeat;
+  background-attachment: fixed;
+  height: 100%; }
+  #equity .equity-income {
+    text-align: center; }
+    #equity .equity-income .row {
+      margin-bottom: 75px; }
+    #equity .equity-income p {
+      padding: 50px 0px;
+      font-size: 1.3rem; }
+    #equity .equity-income h2 {
+      margin-bottom: 50px;
+      color: #a67903; }
+    #equity .equity-income .e-block {
+      transition: all 1s ease-in-out;
+      transform: rotateX(90deg); }
+      #equity .equity-income .e-block img {
+        width: 150px; }
+      #equity .equity-income .e-block p {
+        text-align: center; }
+    #equity .equity-income .e-block-appear {
+      transform: rotateX(0deg); }
 
 body {
   background: #fff; }
