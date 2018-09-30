@@ -2,19 +2,19 @@
 @import 'menu';
 @import 'about';
 @import 'services';
+@import 'philosophy';
 
-
-
-body{
+body {
   background: $primary-color;
-  
-  
-  h1, h2, h3 {
+
+  h1,
+  h2,
+  h3 {
     font-family: $main-font;
     color: $third-color;
   }
 
-  p{
+  p {
     font-family: $secondary-font;
     color: $third-color;
   }
@@ -23,61 +23,53 @@ body{
     transition: all 1s ease-in-out;
     padding-top: 50px;
 
-    .current{
+    .current {
       color: $secondary-color;
     }
   }
-  .navbar-nav .nav-item .nav-link{
+  .navbar-nav .nav-item .nav-link {
     color: white;
     font-family: $main-font;
     font-size: 1.2rem;
     margin-top: 0px;
     transition: all 1s ease-in-out;
-    &:hover{
+    &:hover {
       color: $secondary-color;
     }
-    
-
-    
   }
-  
-  .navbar-nav .nav-item .nav-login  {
+
+  .navbar-nav .nav-item .nav-login {
     color: $third-color;
     background: $secondary-color;
     border-radius: 20px;
-    &:hover{
+    &:hover {
       background: $primary-color;
       color: black;
       border: 1px solid black;
     }
   }
-
-  
 }
 
 // Js add and remove classes
-.black{
+.black {
   background: white !important;
   transform: translateY(0) !important;
-  
 }
 
-.color{
+.color {
   line-height: 40px !important ;
   color: black !important;
   font-size: 20px !important;
   font-family: $footer-font !important;
   text-decoration: none;
   transform: translateY(0) !important;
-  
-  margin-top:0px !important;
-  &:hover{
+
+  margin-top: 0px !important;
+  &:hover {
     cursor: pointer;
-    color: $secondary-color !important
+    color: $secondary-color !important;
   }
-
 }
-
 
 .project {
   text-align: center;
@@ -86,48 +78,54 @@ body{
   transition: all 1s ease-out;
 }
 
-.fade-in{
+.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
 
-
-
-
-header{
+header {
   position: fixed;
   z-index: 2;
   width: 100%;
   height: 20%;
 }
-section.sec1{
+section.sec1 {
   width: 100%;
   height: 100vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76) ),url(../img/austin.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+    url(../img/austin.jpg);
 
   background-size: cover;
   background-position: center;
+  display: table;
   .middle {
-    padding-top: 15%;
     text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    img {
+      width: 1000px;
+    }
 
-    h3{
+    h1 {
+      color: $secondary-color;
+      text-shadow: $shadow;
+      text-align: left;
+      padding-left: 10%;
+      font-size: 50px;
+    }
+
+    h3 {
       color: white;
       text-shadow: $shadow;
+      text-align: left;
+      padding-left: 10%;
     }
 
-    .quote{
-      color: white;
-      margin-top: 50px;
-      font-family: $footer-font;
-      font-size: 2rem;
-      text-shadow: $shadow;
-    }
-    p{
+    p {
       color: white;
     }
 
-    .btn{
+    .btn {
       color: white;
       border: 1px solid white;
       font-family: $secondary-font;
@@ -141,8 +139,6 @@ section.sec1{
       }
     }
   }
- 
-  
 }
 
 // First Wrapper and pictures
@@ -151,17 +147,18 @@ section.sec1{
   margin: 50px auto;
   text-align: center;
   vertical-align: middle;
- 
-// pictures on block css and animation
+
+  // pictures on block css and animation
   .picblock {
     margin-bottom: 75px;
     text-align: center;
     vertical-align: middle;
 
-    &:nth-child(1){
+    &:nth-child(1) {
       height: 300px;
       width: 100%;
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/transparent.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/transparent.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -170,10 +167,11 @@ section.sec1{
       transition: all 2s ease-out;
     }
 
-    &:nth-child(4){
+    &:nth-child(4) {
       height: 300px;
       width: 100%;
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(34, 3, 3, 0.5) ), url(../img/mutualfunds.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(34, 3, 3, 0.5)),
+        url(../img/mutualfunds.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -182,10 +180,11 @@ section.sec1{
       transition: all 2s ease-out;
     }
 
-    &:nth-child(5){
+    &:nth-child(5) {
       height: 300px;
       width: 100%;
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/risk.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/risk.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -193,55 +192,51 @@ section.sec1{
       opacity: 0;
       transition: all 2s ease-out;
     }
-
-    
   }
   .picblock.slide {
     transform: translateX(0px);
     opacity: 1;
   }
 
-  .pic-heading{
+  .pic-heading {
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    margin-top:125px;
+    margin-top: 125px;
     font-family: $main-font;
 
-    .gold{
+    .gold {
       color: $secondary-color;
-      opacity:0 ;
+      opacity: 0;
       background-blend-mode: darken;
       font-size: 1.8rem;
       transition: all 1s ease-in-out;
-      
-
     }
     .gold-appear {
       opacity: 1;
     }
   }
 
-  .textblock{
+  .textblock {
     text-align: center;
-    
+
     transition: all 2s ease-in-out;
     font-size: 0rem;
     margin-top: 25px;
     opacity: 0;
   }
 
-  .text-appear{
+  .text-appear {
     transform: translateY(0px);
     opacity: 1;
     font-size: 1.3rem;
   }
 
   .btn {
-    background:transparent;
+    background: transparent;
     border: 1px solid black;
     color: black;
-    &:hover{
+    &:hover {
       background: $secondary-color;
       cursor: pointer;
       color: white;
@@ -249,94 +244,80 @@ section.sec1{
   }
 }
 
-.wrapper2{
-  height:500px;
+.wrapper2 {
+  height: 500px;
   width: 100%;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/fees.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fees.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
 
-  h1{
+  h1 {
     color: white;
     text-align: center;
-    padding-top:225px;
+    padding-top: 225px;
     text-shadow: $shadow;
   }
 
   .btn {
     background: transparent;
-    color:white;
+    color: white;
     border: 1px solid white;
     text-align: center;
     font-family: $secondary-font;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       background: white;
       color: black;
       font-weight: bold;
-
     }
   }
 }
 
-.wrapper3{
+.wrapper3 {
   height: 300px;
   background: $third-color;
   border-top: 2px solid $secondary-color;
   border-bottom: 2px solid $secondary-color;
 
-  .row{
+  .row {
     margin: 50px auto 30px auto;
     justify-content: center;
-   
-    .col-xs-3{
+
+    .col-xs-3 {
       text-align: center;
       justify-content: center;
 
-      a{
+      a {
         font-size: 50px;
         padding: 15px;
         text-align: center;
         color: white;
         transition: 1s;
-       
 
-        &:hover{
+        &:hover {
           cursor: pointer;
           font-size: 60px;
           transition: 1s;
-          color:#3B5998;
+          color: #3b5998;
         }
-    
-    
       }
     }
   }
 
-  p{
+  p {
     color: white;
     text-align: center;
     font-size: 1.2rem;
   }
 }
 
-footer{
+footer {
   text-align: center;
   padding-top: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @import 'mobil';

@@ -10,7 +10,7 @@
   .grid1 {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 10px 0;
 
     .serv {
@@ -50,28 +50,6 @@
         &:hover {
           background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url(../img/service/solution.jpg);
-          background-size: cover;
-          background-position: top;
-          h3 {
-            transition: all 1s ease-in-out;
-            color: darken($secondary-color, 10);
-            .btn {
-              transform: translateY(0px);
-              opacity: 1;
-            }
-          }
-        }
-      }
-      &:nth-child(3) {
-        transition: all 1s ease-in;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          url(../img/service/planning.jpg);
-
-        background-size: cover;
-        background-position: center;
-        &:hover {
-          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url(../img/service/planning.jpg);
           background-size: cover;
           background-position: top;
           h3 {

@@ -2,35 +2,27 @@
 @include mediaXl {
   .menu-btn {
     display: none;
-  
   }
 }
 
 @include mediaLg {
-.menu-btn {
-  display: none;
-
-}
-section.sec1 {
-  .middle{
-    padding-top: 25%;
+  .menu-btn {
+    display: none;
   }
-}
-.wrapper1 {
-  p{
-    font-size: 1rem;
+
+  .wrapper1 {
+    p {
+      font-size: 1rem;
+    }
   }
-}
-.navbar-nav .nav-item .nav-link{
-  font-size: 1rem !important;
-}
-
-
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem !important;
+  }
 }
 
 @include mediaMd {
   ul.menu-nav,
-  div.menu-branding{
+  div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
@@ -46,27 +38,18 @@ section.sec1 {
     font-size: 24px;
   }
 
-  .menu-branding{
+  .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      
       width: 180px;
       height: 96px;
     }
   }
 
-  section.sec1 {
-    .middle{
-      padding-top: 25%;
-    }
-  }
-  
-  
-
   .wrapper1 {
-    p{
+    p {
       font-size: 1rem;
     }
   }
@@ -75,72 +58,62 @@ section.sec1 {
     display: none;
   }
 
-  #services{
-    .grid1{
+  #services {
+    .grid1 {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 1fr;
-   
-      .serv{
-      
-       height: 300px;
-       width: 100%;
-       border: 1px solid black;
+
+      .serv {
+        height: 300px;
+        width: 100%;
+        border: 1px solid black;
       }
-      
     }
-    .grid2{
+    .grid2 {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 1fr;
-   
-      .serv{
-      
-       height: 300px;
-       width: 100%;
-       border: 1px solid black;
+
+      .serv {
+        height: 300px;
+        width: 100%;
+        border: 1px solid black;
       }
-      
     }
-    .grid3{
+    .grid3 {
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 1fr;
-   
-      .serv{
-      
-       height: 300px;
-       width: 100%;
-       border: 1px solid black;
+
+      .serv {
+        height: 300px;
+        width: 100%;
+        border: 1px solid black;
       }
-      
     }
-     
-   }
+  }
 }
 
 @include mediaSm {
-.menu {
-  .nav-link{
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: .5rem 0;
-}
-}
+  .menu {
+    .nav-link {
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 0.5rem 0;
+    }
+  }
 
-#main *{
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  -o-transform: none !important;
-  -ms-transform: none !important;
-  transform: none !important;
-  
-  
+  #main * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+  }
 }
-}
-

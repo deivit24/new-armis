@@ -95,6 +95,6 @@ $('.e-block').each(function() {
     triggerHook: 0.9
   })
     .setClassToggle(this, 'e-block-appear')
-    .addIndicators()
+
     .addTo(eBlock);
 });

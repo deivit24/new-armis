@@ -318,6 +318,14 @@
   background-size: auto 100%;
   background-position: center; }
 
+#about-process .sec11 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/inheritance.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 #about-process #process h1 {
   text-align: center;
   margin: 50px 0px 25px 0px; }
@@ -365,7 +373,7 @@
 #services .grid1 {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 10px 0; }
   #services .grid1 .serv {
     height: 200px;
@@ -400,21 +408,6 @@
           transition: all 1s ease-in-out;
           color: #a67903; }
           #services .grid1 .serv:nth-child(2):hover h3 .btn {
-            transform: translateY(0px);
-            opacity: 1; }
-    #services .grid1 .serv:nth-child(3) {
-      transition: all 1s ease-in;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/service/planning.jpg);
-      background-size: cover;
-      background-position: center; }
-      #services .grid1 .serv:nth-child(3):hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/service/planning.jpg);
-        background-size: cover;
-        background-position: top; }
-        #services .grid1 .serv:nth-child(3):hover h3 {
-          transition: all 1s ease-in-out;
-          color: #a67903; }
-          #services .grid1 .serv:nth-child(3):hover h3 .btn {
             transform: translateY(0px);
             opacity: 1; }
     #services .grid1 .serv h3 {
@@ -750,9 +743,79 @@
     #equity .equity-income .e-block-appear {
       transform: rotateX(0deg); }
 
+#philosophy {
+  background: url(../img/background.jpg) top center no-repeat;
+  background-attachment: fixed;
+  height: 100%; }
+  #philosophy .navbar-brand {
+    margin-top: -12px; }
+  #philosophy .current {
+    color: #d89e04 !important;
+    font-weight: bold !important; }
+  #philosophy .navbar .nav-item .nav-link {
+    color: black; }
+    #philosophy .navbar .nav-item .nav-link:hover {
+      color: #d89e04;
+      border-bottom: 2px solid black; }
+  #philosophy .wrapper1 {
+    margin-top: 0px;
+    padding-top: 100px;
+    transition: all 1s ease-in-out; }
+    #philosophy .wrapper1 .image {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: translateY(50px); }
+    #philosophy .wrapper1 .image-appear {
+      transform: translateY(0px);
+      opacity: 1; }
+    #philosophy .wrapper1 .title {
+      font-family: "Lato", sans-serif;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(-50px);
+      opacity: 0; }
+    #philosophy .wrapper1 .title-appear {
+      opacity: 1;
+      transform: translateY(0px); }
+  #philosophy .sec {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/strategy.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out; }
+  #philosophy #scroll-spy {
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+    border-bottom: 2px solid #d89e04; }
+  #philosophy .appear {
+    opacity: 1 !important;
+    z-index: 2 !important; }
+  #philosophy .block1 {
+    text-align: center;
+    background: white;
+    box-shadow: 0px 0px 13px 5px rgba(68, 68, 68, 0.2);
+    padding: 50px 20px;
+    margin-bottom: 50px; }
+    #philosophy .block1 h1 {
+      margin-bottom: 50px;
+      text-align: left; }
+    #philosophy .block1 h4 {
+      margin-bottom: 50px;
+      font-family: "Ubuntu", sans-serif; }
+    #philosophy .block1 p {
+      text-align: left;
+      margin-bottom: 25px; }
+    #philosophy .block1 li {
+      text-align: left; }
+    #philosophy .block1 img {
+      width: 500px; }
+
 body {
   background: #fff; }
-  body h1, body h2, body h3 {
+  body h1,
+  body h2,
+  body h3 {
     font-family: "Ubuntu", sans-serif;
     color: #333; }
   body p {
@@ -817,19 +880,25 @@ section.sec1 {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url(../img/austin.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  display: table; }
   section.sec1 .middle {
-    padding-top: 15%;
-    text-align: center; }
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    section.sec1 .middle img {
+      width: 1000px; }
+    section.sec1 .middle h1 {
+      color: #d89e04;
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      padding-left: 10%;
+      font-size: 50px; }
     section.sec1 .middle h3 {
       color: white;
-      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
-    section.sec1 .middle .quote {
-      color: white;
-      margin-top: 50px;
-      font-family: "Raleway", sans-serif;
-      font-size: 2rem;
-      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      padding-left: 10%; }
     section.sec1 .middle p {
       color: white; }
     section.sec1 .middle .btn {
@@ -964,7 +1033,7 @@ section.sec1 {
           cursor: pointer;
           font-size: 60px;
           transition: 1s;
-          color: #3B5998; }
+          color: #3b5998; }
   .wrapper3 p {
     color: white;
     text-align: center;
@@ -981,8 +1050,6 @@ footer {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .menu-btn {
     display: none; }
-  section.sec1 .middle {
-    padding-top: 25%; }
   .wrapper1 p {
     font-size: 1rem; }
   .navbar-nav .nav-item .nav-link {
@@ -1007,8 +1074,6 @@ footer {
     .menu-branding .portrait {
       width: 180px;
       height: 96px; }
-  section.sec1 .middle {
-    padding-top: 25%; }
   .wrapper1 p {
     font-size: 1rem; }
   .navbar {
@@ -1042,7 +1107,7 @@ footer {
   .menu .nav-link {
     font-size: 20px;
     text-transform: uppercase;
-    padding: .5rem 0; }
+    padding: 0.5rem 0; }
   #main * {
     -webkit-transition: none !important;
     -moz-transition: none !important;

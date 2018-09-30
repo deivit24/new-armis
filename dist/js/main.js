@@ -66,20 +66,25 @@ var navLink = new ScrollMagic.Controller();
 
 // build a scene
 var ourScene = new ScrollMagic.Scene({
-  triggerElement: '#trigger'
+  triggerElement: '.btn',
+  triggerHook: 0.4
 })
   .setClassToggle('#project01', 'fade-in')
+
   .addTo(scene);
 
 var navScroll = new ScrollMagic.Scene({
-  triggerElement: '#trigger'
+  triggerElement: '.btn',
+  triggerHook: 0.4
 })
 
   .setClassToggle('.navbar', 'black')
+
   .addTo(nav);
 
 var linkScroll = new ScrollMagic.Scene({
-  triggerElement: '#trigger'
+  triggerElement: '.btn',
+  triggerHook: 0.4
 })
   .setClassToggle('.nav-link', 'color')
 
