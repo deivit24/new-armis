@@ -40,7 +40,7 @@ var spy = new ScrollMagic.Scene({
 
   .setPin('#scroll-spy')
   .setClassToggle('#scroll-spy', 'appear')
-  .addIndicators()
+
   .addTo(scrollSpy);
 
 // init controller
@@ -56,7 +56,7 @@ var scene = new ScrollMagic.Scene({
   triggerHook: 0.8
 })
   .setTween(tween)
-  .addIndicators() // add indicators (requires plugin)
+
   .addTo(controller);
 
 // change behaviour of controller to animate scroll instead of jump
