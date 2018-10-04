@@ -1,0 +1,87 @@
+#info {
+  background: url(../img/background.jpg) top center no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  .navbar-brand {
+    margin-top: -12px;
+  }
+  .current {
+    color: $secondary-color !important;
+    font-weight: bold !important;
+  }
+  .navbar .nav-item .nav-link {
+    color: black;
+    &:hover {
+      color: $secondary-color;
+      border-bottom: 2px solid black;
+    }
+  }
+  .wrapper1 {
+    margin-top: 0px;
+    padding-top: 100px;
+    transition: all 1s ease-in-out;
+    .image {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: translateY(50px);
+    }
+    .image-appear {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    .title {
+      font-family: $secondary-font;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    .title-appear {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .info {
+    .row {
+      text-align: center;
+      h3 {
+        text-align: center;
+      }
+      img {
+        margin-bottom: 75px;
+      }
+
+      ul {
+        margin-top: 50px;
+        text-align: center;
+        list-style: none;
+        li {
+          a {
+            text-decoration: none;
+            color: $third-color;
+            font-family: $footer-font;
+            font-size: 1.2rem;
+            &:hover {
+              color: $secondary-color;
+              cursor: pointer;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    background: url(../img/background.jpg) no-repeat;
+
+    .contact-me {
+      padding: 50px 0px;
+      form {
+        background: white;
+        padding: 50px;
+        box-shadow: 0px 0px 13px 5px rgba(68, 68, 68, 0.2);
+      }
+    }
+  }
+}

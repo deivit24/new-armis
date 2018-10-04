@@ -882,6 +882,187 @@
       #philosophy .finra img:hover {
         cursor: pointer; }
 
+#fees {
+  background: url(../img/background.jpg) top center no-repeat;
+  background-attachment: fixed;
+  height: 100%; }
+  #fees .navbar-brand {
+    margin-top: -12px; }
+  #fees .current {
+    color: #d89e04 !important;
+    font-weight: bold !important; }
+  #fees .navbar .nav-item .nav-link {
+    color: black; }
+    #fees .navbar .nav-item .nav-link:hover {
+      color: #d89e04;
+      border-bottom: 2px solid black; }
+  #fees .wrapper1 {
+    margin-top: 0px;
+    padding-top: 100px;
+    transition: all 1s ease-in-out; }
+    #fees .wrapper1 .image {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: translateY(50px); }
+    #fees .wrapper1 .image-appear {
+      transform: translateY(0px);
+      opacity: 1; }
+    #fees .wrapper1 .title {
+      font-family: "Lato", sans-serif;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(-50px);
+      opacity: 0; }
+    #fees .wrapper1 .title-appear {
+      opacity: 1;
+      transform: translateY(0px); }
+  #fees .sec {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ourfees.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out;
+    display: table; }
+    #fees .sec h1 {
+      color: #d89e04;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 10%; }
+      #fees .sec h1 span {
+        color: white; }
+      #fees .sec h1 .warren {
+        color: white;
+        font-style: italic;
+        font-size: 1.5rem; }
+  #fees #our-fees {
+    background: url(../img/background.jpg) top center no-repeat;
+    background-attachment: fixed;
+    height: 100%; }
+    #fees #our-fees .fee-container {
+      text-align: center; }
+      #fees #our-fees .fee-container .fee-text {
+        padding: 10% 20%;
+        text-align: center;
+        font-size: 1.2rem; }
+      #fees #our-fees .fee-container .examples {
+        box-shadow: 0px 0px 13px 5px rgba(68, 68, 68, 0.2);
+        text-align: center;
+        padding: 25px 10px;
+        background: white;
+        margin-bottom: 25px;
+        transition: all 1s ease-in-out;
+        transform: rotateX(90deg);
+        opacity: 0; }
+        #fees #our-fees .fee-container .examples p {
+          font-size: 1rem; }
+      #fees #our-fees .fee-container .examples-appear {
+        opacity: 1;
+        transform: rotateX(0deg); }
+      #fees #our-fees .fee-container h2 {
+        text-align: left;
+        margin-bottom: 25px; }
+      #fees #our-fees .fee-container p {
+        margin-bottom: 25px;
+        font-size: 1.2rem;
+        font-family: "Raleway", sans-serif; }
+      #fees #our-fees .fee-container h1 {
+        margin-bottom: 35px; }
+    #fees #our-fees table {
+      table-layout: auto;
+      width: 100%;
+      margin-bottom: 50px;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: rotateX(90deg); }
+      #fees #our-fees table .header td {
+        text-align: center;
+        background: #333;
+        color: white;
+        height: 50px;
+        border: 2px solid #d89e04;
+        font-size: 20px;
+        font-family: "Ubuntu", sans-serif; }
+      #fees #our-fees table td {
+        text-align: center;
+        background: white;
+        color: #333;
+        border: 2px solid #d89e04;
+        height: 50px;
+        font-family: "Raleway", sans-serif; }
+      #fees #our-fees table .green {
+        color: green;
+        font-size: 25px; }
+      #fees #our-fees table .red {
+        color: red;
+        font-size: 25px; }
+      #fees #our-fees table .grey {
+        color: grey;
+        font-size: 25px; }
+    #fees #our-fees .table-appear {
+      transform: rotateX(0deg);
+      opacity: 1; }
+
+#info {
+  background: url(../img/background.jpg) top center no-repeat;
+  background-attachment: fixed;
+  height: 100%; }
+  #info .navbar-brand {
+    margin-top: -12px; }
+  #info .current {
+    color: #d89e04 !important;
+    font-weight: bold !important; }
+  #info .navbar .nav-item .nav-link {
+    color: black; }
+    #info .navbar .nav-item .nav-link:hover {
+      color: #d89e04;
+      border-bottom: 2px solid black; }
+  #info .wrapper1 {
+    margin-top: 0px;
+    padding-top: 100px;
+    transition: all 1s ease-in-out; }
+    #info .wrapper1 .image {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: translateY(50px); }
+    #info .wrapper1 .image-appear {
+      transform: translateY(0px);
+      opacity: 1; }
+    #info .wrapper1 .title {
+      font-family: "Lato", sans-serif;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(-50px);
+      opacity: 0; }
+    #info .wrapper1 .title-appear {
+      opacity: 1;
+      transform: translateY(0px); }
+  #info .info .row {
+    text-align: center; }
+    #info .info .row h3 {
+      text-align: center; }
+    #info .info .row img {
+      margin-bottom: 75px; }
+    #info .info .row ul {
+      margin-top: 50px;
+      text-align: center;
+      list-style: none; }
+      #info .info .row ul li a {
+        text-decoration: none;
+        color: #333;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2rem; }
+        #info .info .row ul li a:hover {
+          color: #d89e04;
+          cursor: pointer;
+          font-weight: bold; }
+  #info .contact {
+    background: url(../img/background.jpg) no-repeat; }
+    #info .contact .contact-me {
+      padding: 50px 0px; }
+      #info .contact .contact-me form {
+        background: white;
+        padding: 50px;
+        box-shadow: 0px 0px 13px 5px rgba(68, 68, 68, 0.2); }
+
 body {
   background: #fff; }
   body h1,
