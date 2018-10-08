@@ -42,10 +42,35 @@
   .sec2 {
     width: 100%;
     height: 600px;
-    background: url(../img/360.jpg);
-
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/360.jpg);
     background-size: cover;
     background-position: top;
+    transition: all 1s ease;
+    display: table;
+    .row {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      .current {
+        font-size: 4rem;
+      }
+      a {
+        text-decoration: none;
+        font-family: $main-font;
+        color: white;
+        font-size: 2rem;
+        padding: 10px;
+        margin: 20px 0px;
+        text-shadow: $shadow;
+
+        &:hover {
+          background: white;
+          color: black;
+          border: solid 2px $secondary-color;
+        }
+      }
+    }
   }
   .sec3 {
     width: 100%;
@@ -55,6 +80,31 @@
 
     background-size: cover;
     background-position: bottom;
+    transition: all 1s ease;
+    display: table;
+    .row {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      .current {
+        font-size: 4rem;
+      }
+      a {
+        text-decoration: none;
+        font-family: $main-font;
+        color: white;
+        font-size: 2rem;
+        padding: 10px;
+        margin: 20px 0px;
+        text-shadow: $shadow;
+
+        &:hover {
+          background: white;
+          color: black;
+          border: solid 2px $secondary-color;
+        }
+      }
+    }
   }
 
   main {
@@ -185,6 +235,31 @@
 
     background-size: cover;
     background-position: bottom;
+    transition: all 1s ease-in;
+    display: table;
+    .row {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      .current {
+        font-size: 4rem;
+      }
+      a {
+        text-decoration: none;
+        font-family: $main-font;
+        color: white;
+        font-size: 2rem;
+        padding: 10px;
+        margin: 20px 0px;
+        text-shadow: $shadow;
+
+        &:hover {
+          background: white;
+          color: black;
+          border: solid 2px $secondary-color;
+        }
+      }
+    }
   }
 
   .sec5 {

@@ -93,6 +93,19 @@
       }
     }
   }
+  #risk-profile {
+    .landing {
+      .landing-inner {
+        .countdown {
+          font-size: 22px;
+        }
+
+        .countdown span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 
 @include mediaSm {

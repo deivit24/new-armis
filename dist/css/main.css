@@ -161,16 +161,56 @@
 #about-firm .sec2 {
   width: 100%;
   height: 600px;
-  background: url(../img/360.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/360.jpg);
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  transition: all 1s ease;
+  display: table; }
+  #about-firm .sec2 .row {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    #about-firm .sec2 .row .current {
+      font-size: 4rem; }
+    #about-firm .sec2 .row a {
+      text-decoration: none;
+      font-family: "Ubuntu", sans-serif;
+      color: white;
+      font-size: 2rem;
+      padding: 10px;
+      margin: 20px 0px;
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+      #about-firm .sec2 .row a:hover {
+        background: white;
+        color: black;
+        border: solid 2px #d89e04; }
 
 #about-firm .sec3 {
   width: 100%;
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.5)), url(../img/bike.jpg);
   background-size: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  transition: all 1s ease;
+  display: table; }
+  #about-firm .sec3 .row {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    #about-firm .sec3 .row .current {
+      font-size: 4rem; }
+    #about-firm .sec3 .row a {
+      text-decoration: none;
+      font-family: "Ubuntu", sans-serif;
+      color: white;
+      font-size: 2rem;
+      padding: 10px;
+      margin: 20px 0px;
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+      #about-firm .sec3 .row a:hover {
+        background: white;
+        color: black;
+        border: solid 2px #d89e04; }
 
 #about-firm main h1 {
   text-align: center;
@@ -273,7 +313,27 @@
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.5)), url(../img/process.jpg);
   background-size: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  transition: all 1s ease-in;
+  display: table; }
+  #about-process .sec4 .row {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    #about-process .sec4 .row .current {
+      font-size: 4rem; }
+    #about-process .sec4 .row a {
+      text-decoration: none;
+      font-family: "Ubuntu", sans-serif;
+      color: white;
+      font-size: 2rem;
+      padding: 10px;
+      margin: 20px 0px;
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+      #about-process .sec4 .row a:hover {
+        background: white;
+        color: black;
+        border: solid 2px #d89e04; }
 
 #about-process .sec5 {
   width: 100%;
@@ -1075,6 +1135,98 @@
         padding: 50px;
         box-shadow: 0px 0px 13px 5px rgba(68, 68, 68, 0.2); }
 
+#risk-profile {
+  margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: white;
+  background: #333;
+  overflow: hidden; }
+  #risk-profile .landing {
+    position: static;
+    background-image: url(../img/risk-profile.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; }
+    #risk-profile .landing .landing-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding-top: 50px; }
+      #risk-profile .landing .landing-inner img {
+        width: 800px; }
+      #risk-profile .landing .landing-inner h1 {
+        font-size: 60px;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        color: white; }
+      #risk-profile .landing .landing-inner p {
+        font-size: 25px;
+        margin-bottom: 50px;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+        color: white; }
+      #risk-profile .landing .landing-inner .countdown {
+        font-size: 50px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+        margin-top: 5%;
+        font-family: 'Ubuntu'; }
+      #risk-profile .landing .landing-inner form button {
+        background: #d89e04;
+        color: black;
+        opacity: 0.7;
+        border: 2px solid black; }
+      #risk-profile .landing .landing-inner form button:hover {
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        border: 2px solid white; }
+      #risk-profile .landing .landing-inner .countdown div {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 5px;
+        background: #000;
+        opacity: 0.7; }
+      #risk-profile .landing .landing-inner .countdown div:first-child {
+        background: #d89e04;
+        color: black; }
+      #risk-profile .landing .landing-inner .countdown span {
+        display: block;
+        font-size: 25px; }
+    #risk-profile .landing footer p {
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      font-size: 20px;
+      color: white; }
+    #risk-profile .landing footer .muted {
+      font-size: 15px;
+      color: #333;
+      text-shadow: none; }
+    #risk-profile .landing .fuego {
+      color: #e22822; }
+    #risk-profile .landing .leon {
+      color: #e25822; }
+    #risk-profile .landing .dev {
+      color: black; }
+
+#growth-tips .blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5; }
+
+#growth-tips .blog-header-logo {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 2.25rem; }
+
+#growth-tips .blog-header-logo:hover {
+  text-decoration: none; }
+
 body {
   background: #fff; }
   body h1,
@@ -1365,7 +1517,11 @@ footer {
     #services .grid3 .serv {
       height: 300px;
       width: 100%;
-      border: 1px solid black; } }
+      border: 1px solid black; }
+  #risk-profile .landing .landing-inner .countdown {
+    font-size: 22px; }
+  #risk-profile .landing .landing-inner .countdown span {
+    font-size: 12px; } }
 
 @media screen and (max-width: 500px) {
   .menu .nav-link {
