@@ -52,6 +52,34 @@ body {
     }
   }
 }
+.modal {
+  .modal-content {
+    h5 {
+      font-family: $main-font;
+      font-size: 2rem;
+    }
+    .modal-body {
+      text-align: center;
+      .btn {
+        color: black;
+        text-decoration: none;
+        background: darken($secondary-color, 10);
+        border: 2px solid black;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          background: lighten($secondary-color, 10);
+        }
+      }
+      p {
+        color: #333;
+        margin-top: 10px;
+      }
+      .start {
+        width: 80%;
+      }
+    }
+  }
+}
 
 // Js add and remove classes
 .black {
@@ -135,7 +163,8 @@ section.sec1 {
       color: white;
       border: 1px solid white;
       font-family: $secondary-font;
-      margin-top: 25px;
+      margin-top: 50px;
+      width: 150px;
 
       &:hover {
         color: black;
@@ -143,6 +172,11 @@ section.sec1 {
         cursor: pointer;
         font-family: $footer-font;
       }
+    }
+    .home-login {
+      background: $secondary-color;
+      color: black;
+      border-radius: 20px;
     }
   }
 }

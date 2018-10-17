@@ -62,11 +62,7 @@
         <li class="nav-item">
           <a class="nav-link" href="http://www.armisgrowth.com">Growth Tips</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link nav-login" href="https://www.clientam.com/sso/Login?partnerID=armis9124" target="_blank"><i
-              class="fas fa-lock"></i>
-            Client Login</a>
-        </li>
+
       </ul>
     </div>
   </nav>
@@ -120,10 +116,80 @@
       <h1>Welcome To
         <span class="txt-type" data-wait="3000" data-words='[" A New Kind Of Advice", "  Financial Clarity", "Financial Independece" ]'></span>
       </h1>
-      <h3>That Doesn't Follow The Norm</h3>
 
-      <a class="btn btn-outline-primary" href="dist/page/about-firm.html">Learn More</a>
-      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4"><a class="btn btn-outline-primary" href="dist/page/about-firm.html">Learn More</a></div>
+          <div class="col-sm-4">
+            <button type="button" class="btn home-login" data-toggle="modal" data-target="#loginModal">
+              <i class="fas fa-lock"></i> Client Login
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Client Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="https://www.rightcapital.com/login?cobrand=Kv1ZesPE-mI27DuLGHsxCw&type=client" target="_blank"
+                      class="btn home-login"> Client Dashboard</a>
+                    <p>Your client dashboard provides access to your financial plan with real-time updates. As well as
+                      allowing you to track your net worth, monitor spending, and securely exchange documents.
+
+                    </p>
+                    <a href="https://www.clientam.com/sso/Login?partnerID=armis9124" target="_blank" class="btn">
+                      Account Access</a>
+                    <p>Account Access will direct you to Interactive Brokers Client Portal. They provide custodial
+                      services to hold and secure your investment assets. As well as provide you will performance
+                      information.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4"><a class="btn start" data-toggle="modal" data-target="#startModal">Let's Start</a></div>
+          <!-- Modal -->
+          <div class="modal fade" id="startModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Let's Begin Step Two!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you ready to begin step two of the Armis Approach?</p>
+                  <p>This means we are ready to gather information and ask about your current financial state of
+                    affairs so I can get a clear picture of where you are today.</p>
+                  <p>You can be as specific as you want, if you want to leave some stuff out, that is ok. However, the
+                    more specific you are, the better Financial Plan I can build for you. After you finish inputting
+                    your information I will send you and email to invite you to fill out our Risk Profile
+                    Questionnaire. Then I can fully analyze and develop your Financial Plan that is tailored to you!</p>
+                  <a href="https://www.rightcapital.com/sign-up?referral=Kv1ZesPE-mI27DuLGHsxCw&type=client" target="_blank"
+                    class="btn start">
+                    Gather Information</a>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 

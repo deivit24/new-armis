@@ -424,6 +424,23 @@
   transform: translateX(0px);
   opacity: 1; }
 
+#about-process #process .start {
+  background: #a67903;
+  color: white;
+  border: 1px solid black;
+  font-family: "Lato", sans-serif;
+  margin-top: 50px;
+  width: 150px; }
+  #about-process #process .start:hover {
+    color: black;
+    background: transparent;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    border: 1px solid black; }
+
+#about-process #process .modal-body .start {
+  width: 80%; }
+
 #services .service {
   padding: 50px 0px; }
   #services .service p {
@@ -677,6 +694,23 @@
     margin-bottom: 40px; }
   #financial-planning ul {
     margin-top: 100px; }
+  #financial-planning .fp-start {
+    text-align: center; }
+    #financial-planning .fp-start p {
+      margin-bottom: 0; }
+    #financial-planning .fp-start .btn {
+      color: black;
+      border: 1px solid black;
+      font-family: "Lato", sans-serif;
+      margin-top: 50px;
+      width: 150px;
+      background: #a67903;
+      margin-bottom: 50px; }
+      #financial-planning .fp-start .btn:hover {
+        color: black;
+        background: white;
+        cursor: pointer;
+        font-family: "Raleway", sans-serif; }
   #financial-planning .fp-list {
     padding-bottom: 50px;
     font-family: "Raleway", sans-serif;
@@ -1248,6 +1282,26 @@ body {
       color: black;
       border: 1px solid black; }
 
+.modal .modal-content h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem; }
+
+.modal .modal-content .modal-body {
+  text-align: center; }
+  .modal .modal-content .modal-body .btn {
+    color: black;
+    text-decoration: none;
+    background: #a67903;
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out; }
+    .modal .modal-content .modal-body .btn:hover {
+      background: #fbbc14; }
+  .modal .modal-content .modal-body p {
+    color: #333;
+    margin-top: 10px; }
+  .modal .modal-content .modal-body .start {
+    width: 80%; }
+
 .black {
   background: white !important;
   transform: translateY(0) !important; }
@@ -1312,12 +1366,17 @@ section.sec1 {
       color: white;
       border: 1px solid white;
       font-family: "Lato", sans-serif;
-      margin-top: 25px; }
+      margin-top: 50px;
+      width: 150px; }
       section.sec1 .middle .btn:hover {
         color: black;
         background: white;
         cursor: pointer;
         font-family: "Raleway", sans-serif; }
+    section.sec1 .middle .home-login {
+      background: #d89e04;
+      color: black;
+      border-radius: 20px; }
 
 .wrapper1 {
   padding: 0px;

@@ -366,5 +366,26 @@
       transform: translateX(0px);
       opacity: 1;
     }
+    .start {
+      background: darken($secondary-color, 10);
+      color: white;
+      border: 1px solid black;
+      font-family: $secondary-font;
+      margin-top: 50px;
+      width: 150px;
+
+      &:hover {
+        color: black;
+        background: transparent;
+        cursor: pointer;
+        font-family: $footer-font;
+        border: 1px solid black;
+      }
+    }
+    .modal-body {
+      .start {
+        width: 80%;
+      }
+    }
   }
 }

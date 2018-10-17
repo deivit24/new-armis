@@ -356,6 +356,28 @@
   ul {
     margin-top: 100px;
   }
+  .fp-start {
+    text-align: center;
+    p {
+      margin-bottom: 0;
+    }
+    .btn {
+      color: black;
+      border: 1px solid black;
+      font-family: $secondary-font;
+      margin-top: 50px;
+      width: 150px;
+      background: darken($secondary-color, 10);
+      margin-bottom: 50px;
+
+      &:hover {
+        color: black;
+        background: white;
+        cursor: pointer;
+        font-family: $footer-font;
+      }
+    }
+  }
   .fp-list {
     padding-bottom: 50px;
     font-family: $footer-font;
