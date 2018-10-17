@@ -1,3 +1,6 @@
+a[href^="http://www.armisgrowth.com"] {
+  display: none !important; }
+
 .overlay {
   position: absolute;
   top: 0;
