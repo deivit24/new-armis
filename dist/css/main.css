@@ -1216,17 +1216,6 @@
     #risk-profile .landing .dev {
       color: black; }
 
-#growth-tips .blog-header {
-  line-height: 1;
-  border-bottom: 1px solid #e5e5e5; }
-
-#growth-tips .blog-header-logo {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  font-size: 2.25rem; }
-
-#growth-tips .blog-header-logo:hover {
-  text-decoration: none; }
-
 body {
   background: #fff; }
   body h1,
@@ -1310,6 +1299,8 @@ section.sec1 {
       text-align: left;
       padding-left: 10%;
       font-size: 50px; }
+      section.sec1 .middle h1 .txt-type {
+        border-right: 1px solid white; }
     section.sec1 .middle h3 {
       color: white;
       text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);

@@ -6,7 +6,6 @@
 @import 'fees';
 @import 'info';
 @import 'rpq';
-@import 'growth';
 
 body {
   background: $primary-color;
@@ -116,6 +115,9 @@ section.sec1 {
       text-align: left;
       padding-left: 10%;
       font-size: 50px;
+      .txt-type {
+        border-right: 1px solid white;
+      }
     }
 
     h3 {
