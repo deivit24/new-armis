@@ -72,7 +72,7 @@ $('.left').each(function() {
     triggerElement: this
   })
     .setClassToggle(this, 'rp-appear')
-    .addIndicators()
+
     .addTo(rpLeftBlock);
 });
 
