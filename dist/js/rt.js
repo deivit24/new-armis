@@ -2,7 +2,7 @@ var countdown = document.querySelector('.countdown');
 
 // Set launch date
 
-var launchDate = new Date('Nov 17, 2018 00:00:00').getTime();
+var launchDate = new Date('Nov 20, 2018 00:00:00').getTime();
 
 // Update every second
 
