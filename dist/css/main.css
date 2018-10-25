@@ -1291,19 +1291,51 @@ body {
 
 .modal .modal-content .modal-body {
   text-align: center; }
-  .modal .modal-content .modal-body .btn {
+  .modal .modal-content .modal-body .rightCapital {
     color: black;
     text-decoration: none;
-    background: #a67903;
+    background: #d89e04;
     border: 2px solid black;
     transition: all 0.5s ease-in-out; }
-    .modal .modal-content .modal-body .btn:hover {
-      background: #fbbc14; }
+    .modal .modal-content .modal-body .rightCapital:before {
+      content: 'Client Dashboard'; }
+    .modal .modal-content .modal-body .rightCapital:hover:before {
+      content: ''; }
+    .modal .modal-content .modal-body .rightCapital:hover {
+      background: #2a36b1;
+      color: white;
+      width: 40%; }
+      .modal .modal-content .modal-body .rightCapital:hover:after {
+        content: 'RightCapital'; }
+  .modal .modal-content .modal-body .IB {
+    color: black;
+    text-decoration: none;
+    background: #d89e04;
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out; }
+    .modal .modal-content .modal-body .IB:before {
+      content: 'Account Access'; }
+    .modal .modal-content .modal-body .IB:hover:before {
+      content: ''; }
+    .modal .modal-content .modal-body .IB:hover {
+      background: darkred;
+      color: white;
+      width: 40%; }
+      .modal .modal-content .modal-body .IB:hover:after {
+        content: 'Interactive Brokers'; }
   .modal .modal-content .modal-body p {
     color: #333;
     margin-top: 10px; }
   .modal .modal-content .modal-body .start {
-    width: 80%; }
+    width: 40%;
+    background: #d89e04;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.5s ease-in-out; }
+    .modal .modal-content .modal-body .start:hover {
+      width: 50%;
+      background: #fbbc14;
+      border: 2px solid black; }
 
 .black {
   background: white !important;
