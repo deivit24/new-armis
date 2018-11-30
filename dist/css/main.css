@@ -1484,7 +1484,7 @@ a[href^="http://www.armisgrowth.com"] {
 
 #risk-profile-questions #risk-profile {
   padding: 10px;
-  margin-top: 25px;
+  margin-top: -25px;
   color: black; }
   #risk-profile-questions #risk-profile h2 {
     text-align: center; }
@@ -1534,6 +1534,11 @@ a[href^="http://www.armisgrowth.com"] {
   #risk-profile-questions #client-risk-contact select {
     background: #fde7ab;
     color: black; }
+  #risk-profile-questions #risk-contact textarea,
+  #risk-profile-questions #client-risk-contact textarea {
+    background: #fde7ab;
+    color: black;
+    margin-bottom: -10px; }
 
 #risk-profile-questions #first-box {
   display: flex;

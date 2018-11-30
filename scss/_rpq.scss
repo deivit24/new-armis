@@ -454,7 +454,7 @@ $black-05: rgba(0, 0, 0, 0.05);
 
   #risk-profile {
     padding: 10px;
-    margin-top: 25px;
+    margin-top: -25px;
     color: black;
 
     h2 {
@@ -525,6 +525,14 @@ $black-05: rgba(0, 0, 0, 0.05);
       background: lighten(#d89e04, 40);
       color: black;
     }
+
+    textarea {
+      background: lighten(#d89e04, 40);
+      color: black;
+      margin-bottom: -10px;
+    }
+
+
   }
 
   #first-box {
