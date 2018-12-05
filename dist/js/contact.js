@@ -1,6 +1,5 @@
 // Questions Array
-const questions = [
-  {
+const questions = [{
     question: 'Enter Your First Name'
   },
   {
@@ -148,8 +147,24 @@ function formComplete() {
   var q4 = document.getElementById('q4');
   message.classList.remove('invisible');
 
-  q1.appendChild(document.createTextNode(questions[0].answer));
-  q2.appendChild(document.createTextNode(questions[1].answer));
-  q3.appendChild(document.createTextNode(questions[2].answer));
-  q4.appendChild(document.createTextNode(questions[3].answer));
+  q1.value = questions[0].answer;
+  q2.value = questions[1].answer;
+  q3.value = questions[2].answer;
+  q4.value = questions[3].answer;
 }
+
+
+function resizable(el, factor) {
+  var int = Number(factor) || 7.7;
+
+  function resize() {
+    el.style.width = ((el.value.length + 1) * int) + 'px';
+  }
+  var e = 'keyup,keypress,focus,blur,change'.split(',');
+  for (var i in e) el.addEventListener(e[i], resize, false);
+  resize();
+}
+resizable(document.getElementById('q1'), 7);
+resizable(document.getElementById('q2'), 7);
+resizable(document.getElementById('q3'), 7);
+resizable(document.getElementById('q4'), 7);

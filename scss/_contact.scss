@@ -11,7 +11,7 @@ $slide:all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
 //COLORS
 $grey: #4f4f4f;
 $white: lighten(#d89e04, 20);
-$gold: #d89e04;
+$gold: green;
 $transparent: rgba(255, 255, 255, 0);
 $black-05: rgba(0, 0, 0, 0.05);
 
@@ -181,16 +181,48 @@ $black-05: rgba(0, 0, 0, 0.05);
 
     }
 
-    #q1,
-    #q2,
+    #q1 {
+      font-family: 'Ubuntu';
+      color: darken(#d89e04, 10);
+      padding: 0px 0px;
+      border: none;
+      min-width: 60px !important;
+      max-width: 99.99% !important;
+      transition: width 0.25s;
+      text-align: center;
+    }
+
+    #q2 {
+      font-family: 'Ubuntu';
+      color: darken(#d89e04, 10);
+      padding: 0px 0px;
+      border: none;
+      min-width: 70px !important;
+      max-width: 99.99% !important;
+      transition: width 0.25s;
+      text-align: center;
+    }
+
     #q3 {
       font-family: 'Ubuntu';
       color: darken(#d89e04, 10);
+      padding: 0px 0px;
+      border: none;
+      min-width: 250px !important;
+      max-width: 99.99% !important;
+      transition: width 0.25s;
+      text-align: center;
+
     }
 
     #q4 {
       font-style: italic;
       color: grey;
+      border: none;
+      min-width: 99% !important;
+      max-width: 99.99% !important;
+      transition: width 0.25s;
+      text-align: center;
 
     }
 
