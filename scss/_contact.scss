@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
+
+$primary2: #d89e04;
+$secondary: lighten($primary2, 30%);
+$light: #9e9e9e;
+$error: #ff2d26;
+$progress-height: 10px;
+
+$hover: all 0.2s ease-in;
+$slide:all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+//COLORS
+$grey: #4f4f4f;
+$white: lighten(#d89e04, 20);
+$gold: #d89e04;
+$transparent: rgba(255, 255, 255, 0);
+$black-05: rgba(0, 0, 0, 0.05);
+
+#contact {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: white;
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  h1.end {
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+  }
+
+  #form-box {
+    background: #fff;
+    position: relative;
+    width: 600px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1),
+      0 6px 10px 5px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+      transform: translate(0px, 10px);
+    }
+  }
+
+  #form-box.close {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0);
+  }
+
+  #next-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 40px;
+    color: $primary2;
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  #prev-btn {
+    position: absolute;
+    font-size: 18px;
+    left: 30px;
+    top: 12px;
+    z-index: 2;
+    color: $light;
+    float: right;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  #input-group {
+    position: relative;
+    padding: 30px 20px 20px 20px;
+    margin: 10px 60px 10px 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+
+    input {
+      position: relative;
+      width: 100%;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      outline: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    #input-label {
+      position: absolute;
+      pointer-events: none;
+      top: 32px;
+      left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 0.2s ease-in-out;
+    }
+
+    input:valid+#input-label {
+      top: 6px;
+      left: 42px;
+      margin-left: 0 !important;
+      font-size: 11px;
+      font-weight: normal;
+      color: $light;
+    }
+  }
+
+  #input-progress {
+    border-bottom: 3px solid $primary2;
+    width: 0;
+    transition: width 0.6s ease-in-out;
+  }
+
+  #progress-bar {
+    position: absolute;
+    background: $secondary;
+    height: $progress-height;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .close {
+
+    #next-btn,
+    #prev-btn {
+      color: #fff;
+    }
+  }
+
+  .error {
+    #input-progress {
+      border-color: $error;
+    }
+
+    #next-btn {
+      color: $error;
+    }
+
+    .invisible {
+      display: none;
+      transition: all 1s ease-in-out;
+
+    }
+  }
+
+  #message {
+    opacity: 1;
+    transform: translateY(-150px);
+
+    p {
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+
+    #q1,
+    #q2,
+    #q3 {
+      font-family: 'Ubuntu';
+      color: darken(#d89e04, 10);
+    }
+
+    #q4 {
+      font-style: italic;
+      color: grey;
+
+    }
+
+    #button {
+      color: black;
+      font-family: "Ubuntu";
+      font-size: 1.2rem;
+      padding: 5px 15px;
+      border: 1px solid $grey;
+      border-radius: 4px;
+      transition: $hover;
+      position: relative;
+      background: $white;
+      overflow: hidden;
+      z-index: 1;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.25);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background-color: $black-05;
+        border-radius: 50%;
+        display: block;
+        transition: $slide;
+        z-index: -1;
+      }
+
+      &:after {
+        content: "";
+        position: relative;
+        left: 50%;
+        transform: translateX(50%), scaleY(1), scaleX(1.45);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background-color: $gold;
+        border-radius: 50%;
+        display: block;
+        transition: $slide;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: white;
+        border: 1px solid $gold;
+        cursor: pointer;
+
+
+        &:before {
+          top: -35%;
+          background-color: $gold;
+          transform: translateX(-50%), scaleY(1.3), scaleX(0.8);
+        }
+
+        &:after {
+          top: -45%;
+          background-color: $gold;
+          transform: translateX(-50%), scaleY(1.3), scaleX(0.8);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    #form-box {
+      width: 100%;
+    }
+  }
+}

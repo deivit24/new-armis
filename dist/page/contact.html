@@ -120,73 +120,35 @@
   </div>
 
 
-  <main class="contact">
+  <main id="contact">
     <div class="container contact-me">
-      <form name="contact" method="POST" netlify>
-        <h6>If you can provide your name, contact information and preffered method of contact, I will get in touch
-          the next 24 hours</h6>
-        <br>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="first-name">First Name</label>
-            <input type="text" class="form-control" id="first-name" placeholder="Your First Name" name="first-name">
+      <form>
+        <div id="form-box">
+          <i id="prev-btn" class="fas fa-arrow-left"></i>
+          <i id="next-btn" class="fas fa-arrow-right"></i>
+          <div id="input-group">
+            <input id="input-field" required>
+            <label id="input-label"></label>
+            <div id="input-progress"></div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="last-name">Last Name</label>
-            <input type="text" class="form-control" id="last-name" placeholder="Your Last Name" name="last-name">
-          </div>
-
+          <div id="progress-bar"></div>
         </div>
-        <br>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="email">Email*</label>
-            <input type="email" class="form-control" id="email" placeholder="Smith@example.com" name="_replyto"
-              required>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="phone">Phone*</label>
-            <input type="number" class="form-control" id="phone" placeholder="555-555-5555" required name="phone">
-          </div>
-
-        </div>
-        <br>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <p>Preffered Language*</p>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="language" id="inputEnglish" value="english">
-              <label class="form-check-label" for="english">English</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="language" id="inputSpanish" value="spanish">
-              <label class="form-check-label" for="spanish">Spanish</label>
-            </div>
-
-          </div>
-          <div class="form-group col-md-6">
-            <p>Preffered Contact Method*</p>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="contact via" id="inputPhone" value="phone">
-              <label class="form-check-label" for="phone">Phone</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="contact via" id="inputSelectEmail" value="email">
-              <label class="form-check-label" for="email">E-mail</label>
-            </div>
-
-          </div>
-        </div>
-        <br>
-
-        <div class="form-group">
-          <label for="message">Enter Message*</label>
-          <textarea class="form-control" id="message" name="personal-message" rows="3" required></textarea>
-        </div>
-        <input type="submit" name="Submit" value="Send" class="btn btn-primary">
 
       </form>
 
+    </div>
+    <div id="message">
+      <div class="container">
+        <form name="contact" method="POST" netlify>
+          <p>Hello <span name="first-name" id="q1"></span> <span name="last-name" id="q2"></span>, Armis Financial will
+            be reacing our to you within the
+            next 24 hours. We will reach out you at <span id="q3" name="email"></span>. The Message that we will send
+            to is:</p> <br>
+          <p><span class="italic" id="q4" name="message"></span></p> <br>
+          <p>If all this is correct please click on send. </p>
+          <button id="button" type="submit"> Send</button>
+        </form>
+      </div>
     </div>
 
   </main>
@@ -261,6 +223,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
   <script src="../js/fees.js"></script>
+  <script src="../js/contact.js"></script>
 </body>
 
 </html>
