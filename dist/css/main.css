@@ -1806,7 +1806,7 @@ a[href^="http://www.armisgrowth.com"] {
       color: #a67903;
       padding: 0px 0px;
       border: none;
-      min-width: 60px !important;
+      min-width: 70px !important;
       max-width: 99.99% !important;
       transition: width 0.25s;
       text-align: center; }
@@ -1815,7 +1815,7 @@ a[href^="http://www.armisgrowth.com"] {
       color: #a67903;
       padding: 0px 0px;
       border: none;
-      min-width: 70px !important;
+      min-width: 100px !important;
       max-width: 99.99% !important;
       transition: width 0.25s;
       text-align: center; }
@@ -1847,7 +1847,8 @@ a[href^="http://www.armisgrowth.com"] {
       position: relative;
       background: #fcca46;
       overflow: hidden;
-      z-index: 1; }
+      z-index: 1;
+      float: right; }
       #contact #message #button:before {
         content: "";
         position: absolute;
@@ -1890,7 +1891,7 @@ a[href^="http://www.armisgrowth.com"] {
     #contact #form-box {
       width: 100%; }
     #contact #message {
-      margin-top: 50px; }
+      margin-top: 200px; }
       #contact #message #q1 {
         font-family: 'Ubuntu';
         color: #a67903;

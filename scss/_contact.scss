@@ -186,7 +186,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       color: darken(#d89e04, 10);
       padding: 0px 0px;
       border: none;
-      min-width: 60px !important;
+      min-width: 70px !important;
       max-width: 99.99% !important;
       transition: width 0.25s;
       text-align: center;
@@ -197,7 +197,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       color: darken(#d89e04, 10);
       padding: 0px 0px;
       border: none;
-      min-width: 70px !important;
+      min-width: 100px !important;
       max-width: 99.99% !important;
       transition: width 0.25s;
       text-align: center;
@@ -238,6 +238,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       background: $white;
       overflow: hidden;
       z-index: 1;
+      float: right;
 
       &:before {
         content: "";
@@ -296,7 +297,7 @@ $black-05: rgba(0, 0, 0, 0.05);
     }
 
     #message {
-      margin-top: 50px;
+      margin-top: 200px;
 
       #q1 {
         font-family: 'Ubuntu';
