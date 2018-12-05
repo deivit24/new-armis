@@ -1890,33 +1890,35 @@ a[href^="http://www.armisgrowth.com"] {
       width: 100%; }
     #contact #form-box {
       margin-top: 100px; }
-    #contact #message #q1 {
-      font-family: 'Ubuntu';
-      color: #a67903;
-      padding: 0px 0px;
-      border: none;
-      min-width: 50px !important;
-      max-width: 99.99% !important;
-      transition: width 0.25s;
-      text-align: left; }
-    #contact #message #q2 {
-      font-family: 'Ubuntu';
-      color: #a67903;
-      padding: 0px 0px;
-      border: none;
-      min-width: 60px !important;
-      max-width: 99.99% !important;
-      transition: width 0.25s;
-      text-align: left; }
-    #contact #message #q3 {
-      font-family: 'Ubuntu';
-      color: #a67903;
-      padding: 0px 0px;
-      border: none;
-      min-width: 140px !important;
-      max-width: 99.99% !important;
-      transition: width 0.25s;
-      text-align: center; } }
+    #contact #message {
+      margin-top: -100px; }
+      #contact #message #q1 {
+        font-family: 'Ubuntu';
+        color: #a67903;
+        padding: 0px 0px;
+        border: none;
+        min-width: 50px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: left; }
+      #contact #message #q2 {
+        font-family: 'Ubuntu';
+        color: #a67903;
+        padding: 0px 0px;
+        border: none;
+        min-width: 60px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: left; }
+      #contact #message #q3 {
+        font-family: 'Ubuntu';
+        color: #a67903;
+        padding: 0px 0px;
+        border: none;
+        min-width: 140px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: center; } }
 
 body {
   background: #fff; }
