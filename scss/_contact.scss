@@ -294,5 +294,43 @@ $black-05: rgba(0, 0, 0, 0.05);
     #form-box {
       width: 100%;
     }
+
+    #message {
+      margin-top: 50px;
+
+      #q1 {
+        font-family: 'Ubuntu';
+        color: darken(#d89e04, 10);
+        padding: 0px 0px;
+        border: none;
+        min-width: 50px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: left;
+      }
+
+      #q2 {
+        font-family: 'Ubuntu';
+        color: darken(#d89e04, 10);
+        padding: 0px 0px;
+        border: none;
+        min-width: 60px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: left;
+      }
+
+      #q3 {
+        font-family: 'Ubuntu';
+        color: darken(#d89e04, 10);
+        padding: 0px 0px;
+        border: none;
+        min-width: 140px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: center;
+
+      }
+    }
   }
 }

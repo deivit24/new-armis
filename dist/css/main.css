@@ -1888,7 +1888,36 @@ a[href^="http://www.armisgrowth.com"] {
           transform: translateX(-50%), scaleY(1.3), scaleX(0.8); }
   @media (max-width: 600px) {
     #contact #form-box {
-      width: 100%; } }
+      width: 100%; }
+    #contact #message {
+      margin-top: 50px; }
+      #contact #message #q1 {
+        font-family: 'Ubuntu';
+        color: #a67903;
+        padding: 0px 0px;
+        border: none;
+        min-width: 50px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: left; }
+      #contact #message #q2 {
+        font-family: 'Ubuntu';
+        color: #a67903;
+        padding: 0px 0px;
+        border: none;
+        min-width: 60px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: left; }
+      #contact #message #q3 {
+        font-family: 'Ubuntu';
+        color: #a67903;
+        padding: 0px 0px;
+        border: none;
+        min-width: 140px !important;
+        max-width: 99.99% !important;
+        transition: width 0.25s;
+        text-align: center; } }
 
 body {
   background: #fff; }
