@@ -7,7 +7,7 @@ $error: #ff2d26;
 $progress-height: 10px;
 
 $hover: all 0.2s ease-in;
-$slide:all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+$slide: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
 //COLORS
 $grey: #4f4f4f;
 $white: lighten(#d89e04, 20);
@@ -30,8 +30,6 @@ $black-05: rgba(0, 0, 0, 0.05);
     justify-content: center;
     align-items: center;
   }
-
-
 
   h1.end {
     position: relative;
@@ -121,7 +119,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       transition: 0.2s ease-in-out;
     }
 
-    input:valid+#input-label {
+    input:valid + #input-label {
       top: 6px;
       left: 42px;
       margin-left: 0 !important;
@@ -146,7 +144,7 @@ $black-05: rgba(0, 0, 0, 0.05);
   }
 
   .close {
-
+    display: none;
     #next-btn,
     #prev-btn {
       color: #fff;
@@ -164,21 +162,15 @@ $black-05: rgba(0, 0, 0, 0.05);
 
     .invisible {
       display: none;
-      transition: all 1s ease-in-out;
-
     }
   }
 
   #message {
-    opacity: 1;
-    transform: translateY(-150px);
-
     p {
       text-align: left;
       font-family: 'Roboto', sans-serif;
       font-size: 20px;
       font-weight: bold;
-
     }
 
     #q1 {
@@ -212,7 +204,6 @@ $black-05: rgba(0, 0, 0, 0.05);
       max-width: 99.99% !important;
       transition: width 0.25s;
       text-align: center;
-
     }
 
     #q4 {
@@ -223,12 +214,11 @@ $black-05: rgba(0, 0, 0, 0.05);
       max-width: 99.99% !important;
       transition: width 0.25s;
       text-align: center;
-
     }
 
     #button {
       color: black;
-      font-family: "Ubuntu";
+      font-family: 'Ubuntu';
       font-size: 1.2rem;
       padding: 5px 15px;
       border: 1px solid $grey;
@@ -241,7 +231,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       float: right;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         left: 50%;
         transform: translateX(-50%) scaleY(1) scaleX(1.25);
@@ -256,7 +246,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       }
 
       &:after {
-        content: "";
+        content: '';
         position: relative;
         left: 50%;
         transform: translateX(50%), scaleY(1), scaleX(1.45);
@@ -274,7 +264,6 @@ $black-05: rgba(0, 0, 0, 0.05);
         color: white;
         border: 1px solid $gold;
         cursor: pointer;
-
 
         &:before {
           top: -35%;
@@ -297,8 +286,9 @@ $black-05: rgba(0, 0, 0, 0.05);
     }
 
     #message {
-      margin-top: 200px;
-
+      // p:first-child {
+      //   margin-top: 200px;
+      // }
       #q1 {
         font-family: 'Ubuntu';
         color: darken(#d89e04, 10);
@@ -330,7 +320,6 @@ $black-05: rgba(0, 0, 0, 0.05);
         max-width: 99.99% !important;
         transition: width 0.25s;
         text-align: center;
-
       }
     }
   }

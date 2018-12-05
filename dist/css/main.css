@@ -1783,142 +1783,138 @@ a[href^="http://www.armisgrowth.com"] {
     height: 10px;
     width: 0;
     transition: width 0.5s ease-in-out; }
-  #contact .close #next-btn,
-  #contact .close #prev-btn {
-    color: #fff; }
+  #contact .close {
+    display: none; }
+    #contact .close #next-btn,
+    #contact .close #prev-btn {
+      color: #fff; }
   #contact .error #input-progress {
     border-color: #ff2d26; }
   #contact .error #next-btn {
     color: #ff2d26; }
   #contact .error .invisible {
-    display: none;
-    transition: all 1s ease-in-out; }
-  #contact #message {
-    opacity: 1;
-    transform: translateY(-150px); }
-    #contact #message p {
-      text-align: left;
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-      font-weight: bold; }
+    display: none; }
+  #contact #message p {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold; }
+  #contact #message #q1 {
+    font-family: 'Ubuntu';
+    color: #a67903;
+    padding: 0px 0px;
+    border: none;
+    min-width: 70px !important;
+    max-width: 99.99% !important;
+    transition: width 0.25s;
+    text-align: center; }
+  #contact #message #q2 {
+    font-family: 'Ubuntu';
+    color: #a67903;
+    padding: 0px 0px;
+    border: none;
+    min-width: 100px !important;
+    max-width: 99.99% !important;
+    transition: width 0.25s;
+    text-align: center; }
+  #contact #message #q3 {
+    font-family: 'Ubuntu';
+    color: #a67903;
+    padding: 0px 0px;
+    border: none;
+    min-width: 250px !important;
+    max-width: 99.99% !important;
+    transition: width 0.25s;
+    text-align: center; }
+  #contact #message #q4 {
+    font-style: italic;
+    color: grey;
+    border: none;
+    min-width: 99% !important;
+    max-width: 99.99% !important;
+    transition: width 0.25s;
+    text-align: center; }
+  #contact #message #button {
+    color: black;
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    background: #fcca46;
+    overflow: hidden;
+    z-index: 1;
+    float: right; }
+    #contact #message #button:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) scaleY(1) scaleX(1.25);
+      top: 100%;
+      width: 140%;
+      height: 180%;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      display: block;
+      transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+      z-index: -1; }
+    #contact #message #button:after {
+      content: '';
+      position: relative;
+      left: 50%;
+      transform: translateX(50%), scaleY(1), scaleX(1.45);
+      top: 100%;
+      width: 140%;
+      height: 180%;
+      background-color: green;
+      border-radius: 50%;
+      display: block;
+      transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+      z-index: -1; }
+    #contact #message #button:hover {
+      color: white;
+      border: 1px solid green;
+      cursor: pointer; }
+      #contact #message #button:hover:before {
+        top: -35%;
+        background-color: green;
+        transform: translateX(-50%), scaleY(1.3), scaleX(0.8); }
+      #contact #message #button:hover:after {
+        top: -45%;
+        background-color: green;
+        transform: translateX(-50%), scaleY(1.3), scaleX(0.8); }
+  @media (max-width: 600px) {
+    #contact #form-box {
+      width: 100%; }
     #contact #message #q1 {
       font-family: 'Ubuntu';
       color: #a67903;
       padding: 0px 0px;
       border: none;
-      min-width: 70px !important;
+      min-width: 50px !important;
       max-width: 99.99% !important;
       transition: width 0.25s;
-      text-align: center; }
+      text-align: left; }
     #contact #message #q2 {
       font-family: 'Ubuntu';
       color: #a67903;
       padding: 0px 0px;
       border: none;
-      min-width: 100px !important;
+      min-width: 60px !important;
       max-width: 99.99% !important;
       transition: width 0.25s;
-      text-align: center; }
+      text-align: left; }
     #contact #message #q3 {
       font-family: 'Ubuntu';
       color: #a67903;
       padding: 0px 0px;
       border: none;
-      min-width: 250px !important;
+      min-width: 140px !important;
       max-width: 99.99% !important;
       transition: width 0.25s;
-      text-align: center; }
-    #contact #message #q4 {
-      font-style: italic;
-      color: grey;
-      border: none;
-      min-width: 99% !important;
-      max-width: 99.99% !important;
-      transition: width 0.25s;
-      text-align: center; }
-    #contact #message #button {
-      color: black;
-      font-family: "Ubuntu";
-      font-size: 1.2rem;
-      padding: 5px 15px;
-      border: 1px solid #4f4f4f;
-      border-radius: 4px;
-      transition: all 0.2s ease-in;
-      position: relative;
-      background: #fcca46;
-      overflow: hidden;
-      z-index: 1;
-      float: right; }
-      #contact #message #button:before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%) scaleY(1) scaleX(1.25);
-        top: 100%;
-        width: 140%;
-        height: 180%;
-        background-color: rgba(0, 0, 0, 0.05);
-        border-radius: 50%;
-        display: block;
-        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-        z-index: -1; }
-      #contact #message #button:after {
-        content: "";
-        position: relative;
-        left: 50%;
-        transform: translateX(50%), scaleY(1), scaleX(1.45);
-        top: 100%;
-        width: 140%;
-        height: 180%;
-        background-color: green;
-        border-radius: 50%;
-        display: block;
-        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-        z-index: -1; }
-      #contact #message #button:hover {
-        color: white;
-        border: 1px solid green;
-        cursor: pointer; }
-        #contact #message #button:hover:before {
-          top: -35%;
-          background-color: green;
-          transform: translateX(-50%), scaleY(1.3), scaleX(0.8); }
-        #contact #message #button:hover:after {
-          top: -45%;
-          background-color: green;
-          transform: translateX(-50%), scaleY(1.3), scaleX(0.8); }
-  @media (max-width: 600px) {
-    #contact #form-box {
-      width: 100%; }
-    #contact #message {
-      margin-top: 200px; }
-      #contact #message #q1 {
-        font-family: 'Ubuntu';
-        color: #a67903;
-        padding: 0px 0px;
-        border: none;
-        min-width: 50px !important;
-        max-width: 99.99% !important;
-        transition: width 0.25s;
-        text-align: left; }
-      #contact #message #q2 {
-        font-family: 'Ubuntu';
-        color: #a67903;
-        padding: 0px 0px;
-        border: none;
-        min-width: 60px !important;
-        max-width: 99.99% !important;
-        transition: width 0.25s;
-        text-align: left; }
-      #contact #message #q3 {
-        font-family: 'Ubuntu';
-        color: #a67903;
-        padding: 0px 0px;
-        border: none;
-        min-width: 140px !important;
-        max-width: 99.99% !important;
-        transition: width 0.25s;
-        text-align: center; } }
+      text-align: center; } }
 
 body {
   background: #fff; }
