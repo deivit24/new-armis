@@ -2,26 +2,32 @@
   .navbar-brand {
     margin-top: -12px;
   }
+
   .current {
     color: $secondary-color !important;
     font-weight: bold !important;
   }
+
   .navbar .nav-item .nav-link {
     color: black;
+
     &:hover {
       color: $secondary-color;
       border-bottom: 2px solid black;
     }
   }
+
   .wrapper1 {
     margin-top: 0px;
     padding-top: 100px;
     transition: all 1s ease-in-out;
+
     .image {
       opacity: 0;
       transition: all 1s ease-in-out;
       transform: translateY(50px);
     }
+
     .image-appear {
       transform: translateY(0px);
       opacity: 1;
@@ -33,6 +39,7 @@
       transform: translateY(-50px);
       opacity: 0;
     }
+
     .title-appear {
       opacity: 1;
       transform: translateY(0px);
@@ -48,13 +55,16 @@
     background-position: top;
     transition: all 1s ease;
     display: table;
+
     .row {
       text-align: center;
       display: table-cell;
       vertical-align: middle;
+
       .current {
         font-size: 4rem;
       }
+
       a {
         text-decoration: none;
         font-family: $main-font;
@@ -72,6 +82,7 @@
       }
     }
   }
+
   .sec3 {
     width: 100%;
     height: 600px;
@@ -82,13 +93,16 @@
     background-position: bottom;
     transition: all 1s ease;
     display: table;
+
     .row {
       text-align: center;
       display: table-cell;
       vertical-align: middle;
+
       .current {
         font-size: 4rem;
       }
+
       a {
         text-decoration: none;
         font-family: $main-font;
@@ -120,32 +134,39 @@
       transition: all 0.5s ease-in;
       transform: translateY(100px);
     }
+
     .heading {
       opacity: 0;
       transition: all 0.5s ease-in;
       transform: translateX(-100px);
       margin-bottom: 25px;
     }
+
     .heading-appear {
       opacity: 1;
       transform: translateX(0px);
     }
+
     .text-appear {
       opacity: 1;
       transform: translateY(0px);
     }
+
     .list {
       font-family: $footer-font;
       font-weight: bold;
       opacity: 0;
       transition: all 0.5s ease-in;
+
       li {
         margin-bottom: 15px;
       }
     }
+
     .list-appear {
       opacity: 1;
     }
+
     .block {
       text-align: center;
 
@@ -153,9 +174,17 @@
         margin-bottom: 0px;
         font-family: $secondary-font;
       }
+
       h3 {
         color: darken($secondary-color, 10);
-        margin-bottom: 50px;
+      }
+
+      h5 {
+        a {
+          text-decoration: none;
+        }
+
+        margin-bottom: 25px;
       }
 
       .bio-headings {
@@ -168,6 +197,7 @@
         transform: translateX(0px);
         opacity: 1;
       }
+
       .image {
         text-align: center;
         margin-top: 50px;
@@ -177,6 +207,7 @@
         transform: translateX(-200px);
         opacity: 0;
       }
+
       .bio-img-appear {
         transform: translateX(0px);
         opacity: 1;
@@ -189,12 +220,15 @@
   .navbar-brand {
     margin-top: -12px;
   }
+
   .current {
     color: $secondary-color !important;
     font-weight: bold !important;
   }
+
   .navbar .nav-item .nav-link {
     color: black;
+
     &:hover {
       color: $secondary-color;
       border-bottom: 2px solid black;
@@ -205,11 +239,13 @@
     margin-top: 0px;
     padding-top: 100px;
     transition: all 1s ease-in-out;
+
     .image {
       opacity: 0;
       transition: all 1s ease-in-out;
       transform: translateY(50px);
     }
+
     .image-appear {
       transform: translateY(0px);
       opacity: 1;
@@ -221,6 +257,7 @@
       transform: translateY(-50px);
       opacity: 0;
     }
+
     .title-appear {
       opacity: 1;
       transform: translateY(0px);
@@ -237,13 +274,16 @@
     background-position: bottom;
     transition: all 1s ease-in;
     display: table;
+
     .row {
       text-align: center;
       display: table-cell;
       vertical-align: middle;
+
       .current {
         font-size: 4rem;
       }
+
       a {
         text-decoration: none;
         font-family: $main-font;
@@ -281,6 +321,7 @@
     background-size: cover;
     background-position: center;
   }
+
   .sec7 {
     width: 100%;
     height: 400px;
@@ -290,6 +331,7 @@
     background-size: cover;
     background-position: center;
   }
+
   .sec8 {
     width: 100%;
     height: 600px;
@@ -309,6 +351,7 @@
     background-size: cover;
     background-position: center;
   }
+
   .sec10 {
     width: 100%;
     height: 600px;
@@ -317,6 +360,7 @@
     background-size: auto 100%;
     background-position: center;
   }
+
   .sec11 {
     width: 100%;
     height: 600px;
@@ -331,12 +375,14 @@
       text-align: center;
       margin: 50px 0px 25px 0px;
     }
+
     p {
       text-align: center;
       padding: 0 10%;
       margin-bottom: 20px;
       font-size: 1.2rem;
     }
+
     .gold-step {
       color: darken($secondary-color, 10);
       font-size: 1.5rem;
@@ -352,6 +398,7 @@
       transform: translateX(-200px);
       border-bottom: 2px solid darken($secondary-color, 10);
     }
+
     .right {
       padding: 10%;
       text-align: center;
@@ -362,10 +409,12 @@
       background: #f4f4f4;
       border-bottom: 2px solid darken($secondary-color, 10);
     }
+
     .step-appear {
       transform: translateX(0px);
       opacity: 1;
     }
+
     .start {
       background: darken($secondary-color, 10);
       color: white;
@@ -382,6 +431,7 @@
         border: 1px solid black;
       }
     }
+
     .modal-body {
       .start {
         width: 80%;

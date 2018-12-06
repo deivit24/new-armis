@@ -258,8 +258,11 @@ a[href^="http://www.armisgrowth.com"] {
     margin-bottom: 0px;
     font-family: "Lato", sans-serif; }
   #about-firm main .block h3 {
-    color: #a67903;
-    margin-bottom: 50px; }
+    color: #a67903; }
+  #about-firm main .block h5 {
+    margin-bottom: 25px; }
+    #about-firm main .block h5 a {
+      text-decoration: none; }
   #about-firm main .block .bio-headings {
     transition: all 1s ease-in-out;
     transform: translateX(200px);
