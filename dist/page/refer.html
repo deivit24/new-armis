@@ -120,54 +120,65 @@
   </div>
 
 
-  <main class="contact">
+  <main id="contact">
     <div class="container contact-me">
-      <form method="POST" name="referral" netlify>
-        <h6>If you can provide any family and friends' email information below, we will send them a personal invitation
-          to join Armis Financial on your behalf. Armis Financial will waive one month of adviosry fees to the Referrer</h6>
-        <br>
-        <h3>Client Name*</h3>
-        <div class="form-row">
+      <div class="row">
+        <div id="firstBox" class="col-md-4">
 
-          <div class="form-group col-md-6">
-
-            <input type="text" class="form-control" id="first-name" placeholder="Your First Name" name="first-name">
-          </div>
-          <div class="form-group col-md-6">
-
-            <input type="text" class="form-control" id="last-name" placeholder="Your Last Name" name="last-name">
-          </div>
-
+          <p>If you can provide any family and friends' email information below, we will send them a personal
+            invitation to join Armis Financial on your behalf. Armis Financial will waive one month of adviosry fees to
+            the Referrer
+          </p>
         </div>
-        <br>
-        <h3>Referral Contact Information*</h3>
-        <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="referral-name">Full Name</label>
-            <input type="text" class="form-control" id="referral-name" name="refferal-name" placeholder="Full Name"
-              required>
-          </div>
-          <div class="form-group col-md-4">
-            <label for="email">Email*</label>
-            <input type="email" class="form-control" id="email" placeholder="Smith@example.com" name="_replyto"
-              required>
-          </div>
-          <div class="form-group col-md-4">
-            <label for="phone">Phone*</label>
-            <input type="number" class="form-control" id="phone" placeholder="555-555-5555" required name="phone">
-          </div>
+        <div id="secondBox" class="col-md-8">
+          <form method="POST" name="referral contact" netlify>
+            <h3>Client Name</h3>
+            <div class="form-row">
+              <div class="form-group col-md-6">
 
+                <input type="text" class="form-control" id="inputcfname" placeholder="First Name" name="Client-first-name"
+                  required>
+              </div>
+              <div class="form-group col-md-6">
+
+                <input type="text" name="Client-last-name" class="form-control" id="inputclname" placeholder="Last Name"
+                  required>
+              </div>
+            </div>
+            <h3>Referral Contact Information</h3>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+
+                <input type="text" class="form-control" id="inputrfname" placeholder="First Name" name="referral-first-name"
+                  required>
+              </div>
+              <div class="form-group col-md-6">
+
+                <input type="text" name="referral-last-name" class="form-control" id="inputrlname" placeholder="Last Name"
+                  required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+
+                <input type="email" class="form-control" id="inputremail" placeholder="Email" name="referral-email"
+                  required>
+              </div>
+              <div class="form-group col-md-6">
+
+                <input type="number" name="referral-phone" class="form-control" id="inputrlname" placeholder="Phone Number (optional)">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Personal Message</label>
+              <textarea class="form-control" name="personal message" id="personalMessage" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <br>
-
-
-        <div class="form-group">
-          <label for="message">Personal Message*</label>
-          <textarea class="form-control" id="message" name="personal-message" rows="3" required></textarea>
-        </div>
-        <input type="submit" name="Submit" value="Send" class="btn btn-primary">
-
-      </form>
+      </div>
 
     </div>
 

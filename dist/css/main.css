@@ -1167,6 +1167,26 @@ a[href^="http://www.armisgrowth.com"] {
           color: #d89e04;
           cursor: pointer;
           font-weight: bold; }
+  #info #contact {
+    padding: 50px 0px;
+    height: 100%; }
+    #info #contact .contact-me #firstBox {
+      text-align: center;
+      background: #fde7ab;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px; }
+      #info #contact .contact-me #firstBox img {
+        width: 250px; }
+      #info #contact .contact-me #firstBox p {
+        font-family: 'Raleway';
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold; }
+    #info #contact .contact-me #secondBox {
+      border: #fde7ab 1px solid;
+      padding: 25px; }
 
 #risk-profile-questions #sec1 {
   display: flex;

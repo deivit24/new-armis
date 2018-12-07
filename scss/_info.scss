@@ -85,5 +85,42 @@
     }
   }
 
+  #contact {
 
+    padding: 50px 0px;
+    height: 100%;
+
+    .contact-me {
+
+
+
+      #firstBox {
+        text-align: center;
+        background: lighten(#d89e04, 40);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        img {
+
+          width: 250px;
+        }
+
+        p {
+          font-family: 'Raleway';
+          font-size: 1.5rem;
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+      #secondBox {
+        border: lighten(#d89e04, 40) 1px solid;
+
+        padding: 25px;
+
+      }
+    }
+  }
 }
