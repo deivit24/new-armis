@@ -2,29 +2,36 @@
   background: url(../img/background.jpg) top center no-repeat;
   background-attachment: fixed;
   height: 100%;
+
   .navbar-brand {
     margin-top: -12px;
   }
+
   .current {
     color: $secondary-color !important;
     font-weight: bold !important;
   }
+
   .navbar .nav-item .nav-link {
     color: black;
+
     &:hover {
       color: $secondary-color;
-      border-bottom: 2px solid black;
+
     }
   }
+
   .wrapper1 {
     margin-top: 0px;
     padding-top: 100px;
     transition: all 1s ease-in-out;
+
     .image {
       opacity: 0;
       transition: all 1s ease-in-out;
       transform: translateY(50px);
     }
+
     .image-appear {
       transform: translateY(0px);
       opacity: 1;
@@ -36,6 +43,7 @@
       transform: translateY(-50px);
       opacity: 0;
     }
+
     .title-appear {
       opacity: 1;
       transform: translateY(0px);
@@ -58,9 +66,11 @@
       display: table-cell;
       vertical-align: middle;
       padding-left: 10%;
+
       span {
         color: white;
       }
+
       .warren {
         color: white;
         font-style: italic;
@@ -92,10 +102,12 @@
         transition: all 1s ease-in-out;
         transform: rotateX(90deg);
         opacity: 0;
+
         p {
           font-size: 1rem;
         }
       }
+
       .examples-appear {
         opacity: 1;
         transform: rotateX(0deg);
@@ -105,11 +117,13 @@
         text-align: left;
         margin-bottom: 25px;
       }
+
       p {
         margin-bottom: 25px;
         font-size: 1.2rem;
         font-family: $footer-font;
       }
+
       h1 {
         margin-bottom: 35px;
       }
@@ -123,6 +137,7 @@
 
       transition: all 1s ease-in-out;
       transform: rotateX(90deg);
+
       .header td {
         text-align: center;
         background: #333;
@@ -132,6 +147,7 @@
         font-size: 20px;
         font-family: $main-font;
       }
+
       td {
         text-align: center;
         background: white;
@@ -145,15 +161,18 @@
         color: green;
         font-size: 25px;
       }
+
       .red {
         color: red;
         font-size: 25px;
       }
+
       .grey {
         color: grey;
         font-size: 25px;
       }
     }
+
     .table-appear {
       transform: rotateX(0deg);
       opacity: 1;

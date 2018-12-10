@@ -139,8 +139,7 @@ a[href^="http://www.armisgrowth.com"] {
 #about-firm .navbar .nav-item .nav-link {
   color: black; }
   #about-firm .navbar .nav-item .nav-link:hover {
-    color: #d89e04;
-    border-bottom: 2px solid black; }
+    color: #d89e04; }
 
 #about-firm .wrapper1 {
   margin-top: 0px;
@@ -292,8 +291,7 @@ a[href^="http://www.armisgrowth.com"] {
 #about-process .navbar .nav-item .nav-link {
   color: black; }
   #about-process .navbar .nav-item .nav-link:hover {
-    color: #d89e04;
-    border-bottom: 2px solid black; }
+    color: #d89e04; }
 
 #about-process .wrapper1 {
   margin-top: 0px;
@@ -856,8 +854,7 @@ a[href^="http://www.armisgrowth.com"] {
   #philosophy .navbar .nav-item .nav-link {
     color: black; }
     #philosophy .navbar .nav-item .nav-link:hover {
-      color: #d89e04;
-      border-bottom: 2px solid black; }
+      color: #d89e04; }
   #philosophy .wrapper1 {
     margin-top: 0px;
     padding-top: 100px;
@@ -1007,8 +1004,7 @@ a[href^="http://www.armisgrowth.com"] {
   #fees .navbar .nav-item .nav-link {
     color: black; }
     #fees .navbar .nav-item .nav-link:hover {
-      color: #d89e04;
-      border-bottom: 2px solid black; }
+      color: #d89e04; }
   #fees .wrapper1 {
     margin-top: 0px;
     padding-top: 100px;
@@ -1127,8 +1123,7 @@ a[href^="http://www.armisgrowth.com"] {
   #info .navbar .nav-item .nav-link {
     color: black; }
     #info .navbar .nav-item .nav-link:hover {
-      color: #d89e04;
-      border-bottom: 2px solid black; }
+      color: #d89e04; }
   #info .wrapper1 {
     margin-top: 0px;
     padding-top: 100px;
@@ -1955,17 +1950,43 @@ body {
     color: #333; }
   body .navbar {
     transition: all 1s ease-in-out;
-    padding-top: 50px; }
+    padding-top: 50px;
+    color: white; }
     body .navbar .current {
       color: #d89e04; }
-  body .navbar-nav .nav-item .nav-link {
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.2rem;
-    margin-top: 0px;
-    transition: all 1s ease-in-out; }
-    body .navbar-nav .nav-item .nav-link:hover {
+  body .navbar-light .navbar-nav .nav-link {
+    color: white; }
+    body .navbar-light .navbar-nav .nav-link:hover {
       color: #d89e04; }
+  body .nav-item .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    transition: color 0.2s ease;
+    padding: 3px 0; }
+    body .nav-item .nav-link:hover {
+      color: #fff; }
+      body .nav-item .nav-link:hover::after, body .nav-item .nav-link:hover::before {
+        width: 100%;
+        left: 0; }
+    body .nav-item .nav-link::after, body .nav-item .nav-link::before {
+      content: '';
+      position: absolute;
+      top: calc(100% + 5px);
+      width: 0;
+      right: 0;
+      height: 3px; }
+    body .nav-item .nav-link::before {
+      transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+      background: #333; }
+    body .nav-item .nav-link::after {
+      transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+      background: #d89e04; }
+  body .dropdown-toggle::after {
+    display: none; }
   body .navbar-nav .nav-item .nav-login {
     color: #333;
     background: #d89e04;

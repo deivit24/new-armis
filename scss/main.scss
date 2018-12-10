@@ -27,22 +27,64 @@ body {
   .navbar {
     transition: all 1s ease-in-out;
     padding-top: 50px;
+    color: white;
 
     .current {
       color: $secondary-color;
     }
   }
 
-  .navbar-nav .nav-item .nav-link {
+  .navbar-light .navbar-nav .nav-link {
     color: white;
-    font-family: $main-font;
-    font-size: 1.2rem;
-    margin-top: 0px;
-    transition: all 1s ease-in-out;
 
     &:hover {
       color: $secondary-color;
     }
+  }
+
+  .nav-item .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-family: $main-font;
+    font-size: 20px;
+    transition: color 0.2s ease;
+    padding: 3px 0;
+
+    &:hover {
+      color: #fff;
+
+      &::after,
+      &::before {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(100% + 5px);
+      width: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    &::before {
+      transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+      background: $third-color;
+    }
+
+    &::after {
+      transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+      background: $secondary-color;
+    }
+  }
+
+  .dropdown-toggle::after {
+    display: none;
   }
 
   .navbar-nav .nav-item .nav-login {
@@ -146,6 +188,7 @@ body {
 .black {
   background: white !important;
   transform: translateY(0) !important;
+
 }
 
 .color {
@@ -169,6 +212,7 @@ body {
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s ease-out;
+
 }
 
 .fade-in {
