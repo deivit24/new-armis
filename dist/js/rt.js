@@ -89,7 +89,7 @@ function showQuestion(id) {
 }
 
 // listen for submit
-document.getElementById('quiz').addEventListener('submit', function(e) {
+document.getElementById('quiz').addEventListener('submit', function (e) {
   // hide results
   document.getElementById('answer').style.display = 'none';
   // show loader
@@ -204,7 +204,7 @@ var scene = new ScrollMagic.Scene({
 }).addTo(controller);
 
 // change behaviour of controller to animate scroll instead of jump
-controller.scrollTo(function(newpos) {
+controller.scrollTo(function (newpos) {
   TweenMax.to(window, 0.5, {
     scrollTo: {
       y: newpos
@@ -213,7 +213,7 @@ controller.scrollTo(function(newpos) {
 });
 
 //  bind scroll to anchor links
-$(document).on('click', "[href^='#']", function(e) {
+$(document).on('click', "[href^='#']", function (e) {
   var id = $(this).attr('href');
   if ($(id).length > 0) {
     e.preventDefault();
