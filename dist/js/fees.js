@@ -1,9 +1,9 @@
-$('.menu-btn').on('click', function () {
+$('.menu-btn').on('click', function() {
   $(this).toggleClass('close');
   $('.menu').toggleClass('show');
   $('.menu-nav').toggleClass('show');
   $('.menu-branding').toggleClass('show');
-  $('.nav-item').each(function () {
+  $('.nav-item').each(function() {
     $(this).toggleClass('show');
   });
 });
@@ -12,10 +12,10 @@ $('.menu-btn').on('click', function () {
 var title = new ScrollMagic.Controller();
 
 var titleSlide = new ScrollMagic.Scene({
-    triggerElement: '.title',
-    triggerHook: 0.3,
-    reverse: false
-  })
+  triggerElement: '.title',
+  triggerHook: 0.3,
+  reverse: false
+})
   .setClassToggle('.title', 'title-appear')
 
   .addTo(title);
@@ -23,10 +23,10 @@ var titleSlide = new ScrollMagic.Scene({
 var img = new ScrollMagic.Controller();
 
 var imgSlide = new ScrollMagic.Scene({
-    triggerElement: '.title',
-    triggerHook: 0.3,
-    reverse: false
-  })
+  triggerElement: '.title',
+  triggerHook: 0.3,
+  reverse: false
+})
   .setClassToggle('.image', 'image-appear')
 
   .addTo(img);
@@ -36,10 +36,10 @@ var imgSlide = new ScrollMagic.Scene({
 var table = new ScrollMagic.Controller();
 
 var tableSlide = new ScrollMagic.Scene({
-    triggerElement: 'table',
-    triggerHook: 0.9,
-    reverse: false
-  })
+  triggerElement: 'table',
+  triggerHook: 0.9,
+  reverse: false
+})
   .setClassToggle('table', 'table-appear')
 
   .addTo(table);
@@ -48,11 +48,11 @@ var tableSlide = new ScrollMagic.Scene({
 
 var examples = new ScrollMagic.Controller();
 
-$('.examples').each(function () {
+$('.examples').each(function() {
   var examplesSlide = new ScrollMagic.Scene({
-      triggerElement: this,
-      triggerHook: 0.9
-    })
+    triggerElement: this,
+    triggerHook: 0.9
+  })
     .setClassToggle(this, 'examples-appear')
 
     .addTo(examples);

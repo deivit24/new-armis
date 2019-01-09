@@ -1,13 +1,11 @@
 $hover: all 0.2s ease-in;
-$slide:all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+$slide: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
 //COLORS
 $grey: #4f4f4f;
 $white: #ffffff;
 $gold: #d89e04;
 $transparent: rgba(255, 255, 255, 0);
 $black-05: rgba(0, 0, 0, 0.05);
-
-
 
 #risk-profile-questions {
   #sec1 {
@@ -48,14 +46,10 @@ $black-05: rgba(0, 0, 0, 0.05);
       color: $grey;
     }
 
-
-
-
-
     #homeButton,
     #startQuizBtn {
       color: black;
-      font-family: "Ubuntu";
+      font-family: 'Ubuntu';
       font-size: 1.2rem;
       padding: 5px 15px;
       border: 1px solid $grey;
@@ -67,7 +61,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       z-index: 1;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         left: 50%;
         transform: translateX(-50%) scaleY(1) scaleX(1.25);
@@ -82,7 +76,7 @@ $black-05: rgba(0, 0, 0, 0.05);
       }
 
       &:after {
-        content: "";
+        content: '';
         position: relative;
         left: 50%;
         transform: translateX(50%), scaleY(1), scaleX(1.45);
@@ -101,7 +95,6 @@ $black-05: rgba(0, 0, 0, 0.05);
         border: 1px solid $gold;
         cursor: pointer;
 
-
         &:before {
           top: -35%;
           background-color: $gold;
@@ -116,13 +109,6 @@ $black-05: rgba(0, 0, 0, 0.05);
       }
     }
 
-
-
-
-
-
-
-
     #button-container {
       display: flex;
       flex-direction: row;
@@ -135,14 +121,14 @@ $black-05: rgba(0, 0, 0, 0.05);
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     background: white;
     box-shadow: inset 0px 0px 13px 5px rgba(68, 68, 68, 0.2);
+    overflow: auto;
   }
 
   .form-contain {
-    padding: 25px 20px;
-
+    margin: auto auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 
@@ -250,7 +236,6 @@ $black-05: rgba(0, 0, 0, 0.05);
       }
     }
   }
-
 
   #result-form {
     transition: all 1s ease-in-out;
@@ -399,6 +384,196 @@ $black-05: rgba(0, 0, 0, 0.05);
         font-size: 1.5rem;
       }
     }
+
+    #new-form {
+      padding-top: 50px;
+
+      h1 {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+
+      h3 {
+        text-align: left;
+      }
+
+      h2 {
+        font-family: $main-font;
+        margin-top: 50px;
+
+      }
+
+      h4 {
+        text-align: left;
+        margin-top: 25px;
+        margin-bottom: 50px;
+
+        span {
+          background: #d89e04;
+          padding: 10px;
+          border-radius: 50%;
+        }
+      }
+
+      p {
+        text-align: left;
+        font-family: $secondary-font;
+        font-size: 1rem;
+      }
+
+      .veryAg {
+        background: lighten($color: #d89e04, $amount: 0);
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .aggressive {
+        background: lighten(#d89e04, 10);
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .moderate {
+        background: lighten(#d89e04, 20);
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .conservative {
+        background: lighten(#d89e04, 30);
+        ;
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .veryCon {
+        background: lighten(#d89e04, 40);
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .your-RC {
+        background: rgb(32, 56, 100);
+        color: white;
+        width: 50%;
+        padding: 10px 10px;
+        border-top-right-radius: 20px;
+      }
+
+      .your-RT {
+        background: rgb(56, 87, 35);
+        color: white;
+        width: 50%;
+        padding: 10px 10px;
+        border-top-right-radius: 20px;
+      }
+
+
+
+      .rc-q,
+      .rt-q {
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .row {
+
+
+        .col {
+          p {
+            text-align: center;
+          }
+
+          .a-checked {
+            color: #d89e04;
+            font-weight: bold;
+          }
+
+          input {
+            width: 0;
+            height: 0;
+          }
+
+        }
+      }
+
+
+      #tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        overflow: scroll;
+
+        th {
+          font-size: 14px;
+          padding: 5px 5px;
+          overflow: hidden;
+          word-break: normal;
+          font-weight: bold;
+          border: none;
+          text-align: center;
+          vertical-align: top;
+        }
+
+        td {
+          font-family: $secondary-font;
+          font-size: 14px;
+          padding: 10px 5px;
+          border-bottom: 1px solid black;
+          border-right: solid 1px black;
+          border-left: 1px solid black;
+
+          overflow: hidden;
+          word-break: normal;
+
+
+
+
+        }
+
+        .tg-qgos {
+          font-style: italic;
+
+          background: lighten(#d89e04, 40);
+
+          text-align: center;
+          vertical-align: top;
+        }
+
+        .tg-rsku {
+          font-style: italic;
+          background: lighten(#d89e04, 30);
+
+          text-align: center;
+          vertical-align: top;
+        }
+
+        .tg-fr4n {
+          font-style: italic;
+          background: lighten(#d89e04, 20);
+
+          text-align: center;
+          vertical-align: top
+        }
+
+        .tg-j0lt {
+          font-style: italic;
+          background: lighten(#d89e04, 10);
+
+          text-align: center;
+          vertical-align: top
+        }
+
+        .tg-pub8 {
+          font-style: italic;
+          background: lighten(#d89e04, 0);
+
+          text-align: center;
+          vertical-align: top;
+        }
+      }
+    }
   }
 
   #riskTable {}
@@ -459,7 +634,6 @@ $black-05: rgba(0, 0, 0, 0.05);
 
     h2 {
       text-align: center;
-
     }
 
     input {
@@ -503,6 +677,8 @@ $black-05: rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
     label {
       background: black;
@@ -531,8 +707,6 @@ $black-05: rgba(0, 0, 0, 0.05);
       color: black;
       margin-bottom: -10px;
     }
-
-
   }
 
   #first-box {

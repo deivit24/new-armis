@@ -347,6 +347,311 @@
 
     <div class="container invisible" id="table">
       <form method="POST" name="live risk profile" netlify>
+        <div class="container" id="new-form">
+
+          <h1>Calculating your score:</h1>
+          <h3 class="your-RC">Your Risk Capacity</h3>
+          <p class="rc-q">Time Horizon</p>
+          <div class="row">
+            <div class="col">
+              <label for="q1"> Q1.</label>
+            </div>
+            <div class="col">
+              <p id="a0">A = 0</p>
+              <input type="radio" name="q1" value="A" />
+            </div>
+            <div class="col">
+              <p id="a1">B = 3</p>
+              <input type="radio" name="q1" value="B" />
+            </div>
+            <div class="col">
+              <p id="a2">C = 5</p>
+              <input type="radio" name="q1" value="C" />
+            </div>
+            <div class="col">
+              <p id="a3">D = 8</p>
+              <input type="radio" name="q1" value="D" />
+            </div>
+            <div class="col">
+              <p id="a4">E = 10</p>
+              <input type="radio" name="q1" value="E" />
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <label for="q2"> Q2.</label>
+            </div>
+            <div class="col">
+              <p id="a5">A = 0</p>
+              <input type="radio" name="q2" value="A" />
+            </div>
+            <div class="col">
+              <p id="a6">B = 3</p>
+              <input type="radio" name="q2" value="B" />
+            </div>
+            <div class="col">
+              <p id="a7">C = 5</p>
+              <input type="radio" name="q2" value="C" />
+            </div>
+            <div class="col">
+              <p id="a8">D = 8</p>
+              <input type="radio" name="q2" value="D" />
+            </div>
+            <div class="col">
+              <p id="a9">E = 10</p>
+              <input type="radio" name="q2" value="E" />
+            </div>
+          </div>
+
+          <p class="rc-q">Liquidity</p>
+          <div class="row">
+            <div class="col">
+              <label for="q3">Q3.</label>
+            </div>
+            <div class="col">
+              <p id="a10">A = 0</p>
+              <input type="radio" name="q3" value="A" />
+            </div>
+            <div class="col">
+              <p id="a11">B = 3</p>
+              <input type="radio" name="q3" value="B" />
+            </div>
+            <div class="col">
+              <p id="a12">C = 8</p>
+              <input type="radio" name="q3" value="C" />
+            </div>
+            <div class="col">
+              <p id="a13">D = 10</p>
+              <input type="radio" name="q3" value="D" />
+            </div>
+            <div class="col">
+              <p id="a14">E = 5</p>
+              <input type="radio" name="q3" value="E" />
+            </div>
+          </div>
+
+          <p class="rc-q">Income</p>
+          <div class="row">
+            <div class="col">
+              <label for="q4">Q4.</label>
+            </div>
+            <div class="col">
+              <p id="a15">A = 0</p>
+              <input type="radio" name="q4" value="A" />
+            </div>
+            <div class="col">
+              <p id="a16">B = 3</p>
+              <input type="radio" name="q4" value="B" />
+            </div>
+            <div class="col">
+              <p id="a17">C = 5</p>
+              <input type="radio" name="q4" value="C" />
+            </div>
+            <div class="col">
+              <p id="a18">D = 8</p>
+              <input id="q4D" type="radio" name="q4" value="D" />
+            </div>
+            <div class="col">
+              <p id="a19">E = 10</p>
+              <input type="radio" name="q4" value="E" />
+            </div>
+          </div>
+
+          <p class="rc-q">Reliability</p>
+          <div class="row">
+            <div class="col">
+              <label for="q5">Q5.</label>
+            </div>
+            <div class="col">
+              <p id="a20">A = 0</p>
+              <input type="radio" name="q5" value="A" />
+            </div>
+            <div class="col">
+              <p id="a21">B = 3</p>
+              <input type="radio" name="q5" value="B" />
+            </div>
+            <div class="col">
+              <p id="a22">C = 5</p>
+              <input type="radio" name="q5" value="C" />
+            </div>
+            <div class="col">
+              <p id="a23">D = 8</p>
+              <input type="radio" name="q5" value="D" />
+            </div>
+            <div class="col">
+              <p id="a24">E = 10</p>
+              <input type="radio" name="q5" value="E" />
+            </div>
+          </div>
+
+          <h4>Risk Capacity Score: <span id="rcTotalScore"> </span></h4>
+
+          <h3 class="your-RT">Your Risk Tolerance</h3>
+          <p class="rt-q">Behavior</p>
+          <div class="row">
+            <div class="col">
+              <label for="q6">Q6.</label>
+            </div>
+            <div class="col">
+              <p id="a25">A = 0</p>
+              <input type="radio" name="q6" value="A" />
+            </div>
+            <div class="col">
+              <p id="a26">B = 3</p>
+              <input type="radio" name="q6" value="B" />
+            </div>
+            <div class="col">
+              <p id="a27">C = 5</p>
+              <input type="radio" name="q6" value="C" />
+            </div>
+            <div class="col">
+              <p id="a28">D = 8</p>
+              <input type="radio" name="q6" value="D" />
+            </div>
+            <div class="col">
+              <p id="a29">E = 10</p>
+              <input type="radio" name="q6" value="E" />
+            </div>
+          </div>
+
+          <p class="rt-q">Perception</p>
+          <div class="row">
+            <div class="col">
+              <label for="q7">Q7.</label>
+            </div>
+            <div class="col">
+              <p id="a30">A = 0</p>
+              <input type="radio" name="q7" value="A" />
+            </div>
+            <div class="col">
+              <p id="a31">B = 3</p>
+              <input type="radio" name="q7" value="B" />
+            </div>
+            <div class="col">
+              <p id="a32">C = 5</p>
+              <input type="radio" name="q7" value="C" />
+            </div>
+            <div class="col">
+              <p id="a33">D = 8</p>
+              <input type="radio" name="q7" value="D" />
+            </div>
+            <div class="col">
+              <p id="a34">E = 10</p>
+              <input type="radio" name="q7" value="E" />
+            </div>
+          </div>
+
+          <p class="rt-q">Short-Term</p>
+          <div class="row">
+            <div class="col">
+              <label for="q8">Q8.</label>
+            </div>
+            <div class="col">
+              <p id="a35">A = 0</p>
+              <input type="radio" name="q8" value="A" />
+            </div>
+            <div class="col">
+              <p id="a36">B = 3</p>
+              <input type="radio" name="q8" value="B" />
+            </div>
+            <div class="col">
+              <p id="a37">C = 5</p>
+              <input type="radio" name="q8" value="C" />
+            </div>
+            <div class="col">
+              <p id="a38">D = 8</p>
+              <input type="radio" name="q8" value="D" />
+            </div>
+            <div class="col">
+              <p id="a39">E = 10</p>
+              <input type="radio" name="q8" value="E" />
+            </div>
+          </div>
+
+          <p class="rt-q">Volatility</p>
+          <div class="row">
+            <div class="col">
+              <label for="q9">Q9.</label>
+            </div>
+            <div class="col">
+              <p id="a40">A = 0</p>
+              <input type="radio" name="q9" value="A" />
+            </div>
+            <div class="col">
+              <p id="a41">B = 3</p>
+              <input type="radio" name="q9" value="B" />
+            </div>
+            <div class="col">
+              <p id="a42">C = 5</p>
+              <input type="radio" name="q9" value="C" />
+            </div>
+            <div class="col">
+              <p id="a43">D = 8</p>
+              <input type="radio" name="q9" value="D" />
+            </div>
+            <div class="col">
+              <p id="a44">E = 10</p>
+              <input type="radio" name="q9" value="E" />
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <label for="q10">Q10.</label>
+            </div>
+            <div class="col">
+              <p id="a45">A = 0</p>
+              <input type="radio" name="q10" value="A" />
+            </div>
+            <div class="col">
+              <p id="a46">B = 3</p>
+              <input type="radio" name="q10" value="B" />
+            </div>
+            <div class="col">
+              <p id="a47">C = 5</p>
+              <input type="radio" name="q10" value="C" />
+            </div>
+            <div class="col">
+              <p id="a48">D = 8</p>
+              <input type="radio" name="q10" value="D" />
+            </div>
+            <div class="col">
+              <p id="a49">E = 10</p>
+              <input type="radio" name="q10" value="E" />
+            </div>
+          </div>
+          <h4>Risk Tolerance Score: <span id="rtTotalScore"> </span></h4>
+
+          <h1>Determining Your Risk Profile</h1>
+          <p>Now it’s time to determine your Risk Profile. This table will guide us to determine what is your proper
+            Risk
+            Profile by cross-referencing your Risk Capacity Score and your Risk Tolerance Score. Keep in mind that this
+            won’t be the ultimate deciding factor on how we will invest. Every individual has different goals for the
+            account that will be opened. There are many factors that come into play that may cause a slight change to
+            your Risk Profile, such as the Risk Required to meet your financial goals. However, the table below will be
+            the starting point to tailoring an investment strategy to meet your goals.</p>
+          <h2>Total Risk Profile Score: <span id="rpTotalScore"></span></h2>
+          <table id="tg">
+            <tr>
+              <th class="tg-k2wi">0 - 20</th>
+              <th class="tg-k2wi">21 - 40</th>
+              <th class="tg-k2wi">41 - 60</th>
+              <th class="tg-k2wi">61 - 80 </th>
+              <th class="tg-k2wi">81 - 100</th>
+            </tr>
+            <tr>
+              <td class="tg-qgos">Very Conservative</td>
+              <td class="tg-rsku">Conservative</td>
+              <td class="tg-fr4n">Moderate</td>
+              <td class="tg-j0lt">Moderately Aggressive</td>
+              <td class="tg-pub8">Very Aggressive</td>
+            </tr>
+          </table>
+        </div>
+
         <div id="answer"></div>
         <div class="row">
           <div class="col">
@@ -378,121 +683,101 @@
 
         <!-- Table Row -->
 
-        <div class="row" id="table-row">
-          <div class="col-sm-6" id="third-box">
-            <h2 id="riskLevel">Risk Levels</h2>
-            <table id="riskTable">
-              <tr>
-                <th class="vc" id="vc">Very Conservative</th>
-              </tr>
-              <tr>
-                <th class="c" id="c">Conservative</th>
-              </tr>
-              <tr>
-                <th class="m" id="m">Moderate</th>
-              </tr>
-              <tr>
-                <th class="ma" id="ma">Moderately Aggressive</th>
-              </tr>
-              <tr>
-                <th class="va" id="va">Very Aggressive</th>
-              </tr>
-            </table>
-          </div>
-          <!-- Contact Form -->
-          <div id="risk-contact" class="col-sm-6">
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label for="first-name">First Name:</label>
-                <input type="text" class="form-control" id="inputFName" placeholder="First Name" name="first-name"
-                  required />
-              </div>
-              <div class="form-group col-6">
-                <label for="last-name">Last Name:</label>
-                <input type="text" class="form-control" id="inputLName" placeholder="Last Name" name="last-name"
-                  required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label for="inputEmail">Email:</label>
-                <input type="email" class="form-control" id="inputAddress" placeholder="johndoe@example.com" name="email"
-                  required />
-              </div>
 
-              <div class="form-group col-6">
-                <div class="form-group">
-                  <label for="personalMessage">Message</label>
-                  <textarea class="form-control" id="personalMessage" name="personalMessage" rows="1"></textarea>
-                </div>
-              </div>
-
+        <!-- Contact Form -->
+        <div id="risk-contact" class="col">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="first-name">First Name:</label>
+              <input type="text" class="form-control" id="inputFName" placeholder="First Name" name="first-name"
+                required />
             </div>
-            <div class="row">
-              <div class="col-6">
-                <button type="reset" class="btn btn-danger" onclick="resetAnswer()">
-                  Reset
-                </button>
-              </div>
-              <div class="col-6">
-                <button class="btn btn-success" type="submit">Send</button>
-              </div>
-            </div>
-            <small id="emailHelp1" class="form-text text-muted">By clicking "Send", you are giving permission to Armis
-              Financial to reach out to you via E-Mail. We will never share your E-Mail with anyone else.</small>
-          </div>
-          <!-- Client risk contact -->
-          <div id="client-risk-contact" class="col-sm-6">
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label for="first-name">Client Name</label>
-                <input type="text" class="form-control" id="inputFName" placeholder="First Name" name=" Client first-name"
-                  required />
-              </div>
-              <div class="form-group col-6">
-                <label for="last-name">Last Name:</label>
-                <input type="text" class="form-control" id="inputLName" placeholder="Last Name" name="client last-name"
-                  required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label for="inputEmail">Email:</label>
-                <input type="email" class="form-control" id="inputAddress" placeholder="johndoe@example.com" name="email"
-                  required />
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-
-              <div class="form-group col-6">
-                <label for="inputState">Account Type:</label>
-                <select id="inputAccountType" class="form-control" required name="Account Type">
-                  <option selected>Choose...</option>
-                  <option>Individual</option>
-                  <option>Joint</option>
-                  <option>Trust</option>
-                  <option>Traditional IRA</option>
-                  <option>Roth IRA</option>
-                  <option>UGMA/UTMA</option>
-                  <option>Organization</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button type="reset" class="btn btn-danger" onclick="resetAnswer()">
-                  Reset
-                </button>
-              </div>
-              <div class="col-6">
-                <button class="btn btn-success" type="submit">Send</button>
-              </div>
+            <div class="form-group col-6">
+              <label for="last-name">Last Name:</label>
+              <input type="text" class="form-control" id="inputLName" placeholder="Last Name" name="last-name" required />
             </div>
           </div>
-          <!-- End Contact form -->
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="inputEmail">Email:</label>
+              <input type="email" class="form-control" id="inputAddress" placeholder="johndoe@example.com" name="email"
+                required />
+            </div>
+
+            <div class="form-group col-6">
+              <div class="form-group">
+                <label for="personalMessage">Message</label>
+                <textarea class="form-control" id="personalMessage" name="personalMessage" rows="1"></textarea>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <button type="reset" class="btn btn-danger" onclick="resetAnswer()">
+                Reset
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-success" type="submit">Send</button>
+            </div>
+          </div>
+          <small id="emailHelp1" class="form-text text-muted">By clicking "Send", you are giving permission to Armis
+            Financial to reach out to you via E-Mail. We will never share your E-Mail with anyone else.</small>
         </div>
+        <!-- Client risk contact -->
+        <div id="client-risk-contact" class="col">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="first-name">Client Name</label>
+              <input type="text" class="form-control" id="inputFName" placeholder="First Name" name=" Client first-name"
+                required />
+            </div>
+            <div class="form-group col-6">
+              <label for="last-name">Last Name:</label>
+              <input type="text" class="form-control" id="inputLName" placeholder="Last Name" name="client last-name"
+                required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="inputEmail">Email:</label>
+              <input type="email" class="form-control" id="inputAddress" placeholder="johndoe@example.com" name="email"
+                required />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group col-6">
+              <label for="inputState">Account Type:</label>
+              <select id="inputAccountType" class="form-control" required name="Account Type">
+                <option selected>Choose...</option>
+                <option>Individual</option>
+                <option>Joint</option>
+                <option>Trust</option>
+                <option>Traditional IRA</option>
+                <option>Roth IRA</option>
+                <option>UGMA/UTMA</option>
+                <option>Organization</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <button type="reset" class="btn btn-danger" onclick="resetAnswer()">
+                Reset
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-success" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact form -->
+
 
         <!-- End Table Row -->
       </form>
+
     </div>
   </section>
 

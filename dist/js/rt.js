@@ -450,7 +450,7 @@ function caclRiskProfile() {
     let riskPvc = document.getElementById('risk-profile');
     riskPvc.innerHTML = `
     <h2>Your Risk Profile</h2>
-    <label for="Very Conservative" class="ma">Very Conservative</label>
+    <label for="Very Conservative" class="vc">Very Conservative</label>
     <input
               type="radio"
               name="risk-profile"
@@ -458,8 +458,7 @@ function caclRiskProfile() {
               checked
             />
     `;
-    let vcRisk = document.getElementById('vc');
-    vcRisk.classList = 'chosen';
+
   }
 
   if (totalScore > 20 && totalScore <= 40) {
@@ -474,8 +473,7 @@ function caclRiskProfile() {
               checked
             />
     `;
-    let cRisk = document.getElementById('c');
-    cRisk.classList = 'chosen';
+
   }
   if (totalScore > 40 && totalScore <= 60) {
     let riskPm = document.getElementById('risk-profile');
@@ -489,8 +487,7 @@ function caclRiskProfile() {
               checked
             />
     `;
-    let mRisk = document.getElementById('m');
-    mRisk.classList = 'chosen';
+
   }
   if (totalScore > 60 && totalScore <= 80) {
     let riskPma = document.getElementById('risk-profile');
@@ -504,8 +501,7 @@ function caclRiskProfile() {
               checked
             />
     `;
-    let maRisk = document.getElementById('ma');
-    maRisk.classList = 'chosen';
+
   }
   if (totalScore > 80) {
     let riskPa = document.getElementById('risk-profile');
@@ -519,9 +515,79 @@ function caclRiskProfile() {
               checked
             />
     `;
-    let vaRisk = document.getElementById('va');
-    vaRisk.classList = 'chosen';
+
+
   }
+
+  // New Form Calculations
+
+  let allAnswers = document.getElementsByTagName('input');
+  for (i = 0; i <= 49; i++) {
+    if (allAnswers[i].checked) {
+      allAnswers[i + 56].checked = true;
+      document.getElementById('a' + i).classList.add("a-checked");
+
+    }
+  }
+
+  let rcTScore = document.getElementById("rcTotalScore");
+  rcTScore.innerHTML = maxrcscore;
+  if (maxrcscore > 40) {
+    rcTScore.classList = "veryAg";
+  }
+  if (maxrcscore > 30 && maxrcscore <= 40) {
+    rcTScore.classList = "aggressive";
+  }
+  if (maxrcscore > 20 && maxrcscore <= 30) {
+    rcTScore.classList = "moderate";
+  }
+  if (maxrcscore > 10 && maxrcscore <= 20) {
+    rcTScore.classList = "conservative";
+  }
+  if (maxrcscore <= 10) {
+    rcTScore.classList = "veryCon";
+  }
+  // Risk Tolerance Score Begins
+  let rtTScore = document.getElementById("rtTotalScore");
+  rtTScore.innerHTML = maxrtscore;
+
+  if (maxrtscore > 40) {
+    rtTScore.classList = "veryAg";
+  }
+  if (maxrtscore > 30 && maxrtscore <= 40) {
+    rtTScore.classList = "aggressive";
+  }
+  if (maxrtscore > 20 && maxrtscore <= 30) {
+    rtTScore.classList = "moderate";
+  }
+  if (maxrtscore > 10 && maxrtscore <= 20) {
+    rtTScore.classList = "conservative";
+  }
+  if (maxrtscore <= 10) {
+    rtTScore.classList = "veryCon";
+  }
+
+  // Full Risk Profile Score
+
+  let rpTScore = document.getElementById("rpTotalScore");
+  rpTScore.innerHTML = totalScore;
+  if (totalScore > 80) {
+    rpTScore.classList = "veryAg";
+  }
+  if (totalScore > 60 && totalScore <= 80) {
+    rpTScore.classList = "aggressive";
+  }
+  if (totalScore > 40 && totalScore <= 60) {
+    rpTScore.classList = "moderate";
+  }
+  if (totalScore > 20 && totalScore <= 40) {
+    rpTScore.classList = "conservative";
+  }
+  if (totalScore <= 20) {
+    rpTScore.classList = "veryCon";
+  }
+
+
 }
 
 // side swipe panels
