@@ -1456,6 +1456,8 @@ a[href^="http://www.armisgrowth.com"] {
     border: 3px solid black;
     font-weight: bold;
     font-size: 1.5rem; }
+  #risk-profile-questions #table input {
+    visibility: visible; }
   #risk-profile-questions #table #new-form {
     padding-top: 50px; }
     #risk-profile-questions #table #new-form h1 {
