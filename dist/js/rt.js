@@ -89,7 +89,7 @@ function showQuestion(id) {
 }
 
 // listen for submit
-document.getElementById('quiz').addEventListener('submit', function (e) {
+document.getElementById('quiz').addEventListener('submit', function(e) {
   // hide results
   document.getElementById('answer').style.display = 'none';
   // show loader
@@ -204,7 +204,7 @@ var scene = new ScrollMagic.Scene({
 }).addTo(controller);
 
 // change behaviour of controller to animate scroll instead of jump
-controller.scrollTo(function (newpos) {
+controller.scrollTo(function(newpos) {
   TweenMax.to(window, 0.5, {
     scrollTo: {
       y: newpos
@@ -213,7 +213,7 @@ controller.scrollTo(function (newpos) {
 });
 
 //  bind scroll to anchor links
-$(document).on('click', "[href^='#']", function (e) {
+$(document).on('click', "[href^='#']", function(e) {
   var id = $(this).attr('href');
   if ($(id).length > 0) {
     e.preventDefault();
@@ -458,7 +458,6 @@ function caclRiskProfile() {
               checked
             />
     `;
-
   }
 
   if (totalScore > 20 && totalScore <= 40) {
@@ -473,7 +472,6 @@ function caclRiskProfile() {
               checked
             />
     `;
-
   }
   if (totalScore > 40 && totalScore <= 60) {
     let riskPm = document.getElementById('risk-profile');
@@ -487,7 +485,6 @@ function caclRiskProfile() {
               checked
             />
     `;
-
   }
   if (totalScore > 60 && totalScore <= 80) {
     let riskPma = document.getElementById('risk-profile');
@@ -501,7 +498,6 @@ function caclRiskProfile() {
               checked
             />
     `;
-
   }
   if (totalScore > 80) {
     let riskPa = document.getElementById('risk-profile');
@@ -515,8 +511,6 @@ function caclRiskProfile() {
               checked
             />
     `;
-
-
   }
 
   // New Form Calculations
@@ -524,70 +518,67 @@ function caclRiskProfile() {
   let allAnswers = document.getElementsByTagName('input');
   for (i = 0; i <= 49; i++) {
     if (allAnswers[i].checked) {
-      allAnswers[i + 56].checked = true;
-      document.getElementById('a' + i).classList.add("a-checked");
-
+      allAnswers[i + 50].setAttribute('checked', 'checked');
+      document.getElementById('a' + i).classList.add('a-checked');
     }
   }
 
-  let rcTScore = document.getElementById("rcTotalScore");
+  let rcTScore = document.getElementById('rcTotalScore');
   rcTScore.innerHTML = maxrcscore;
   if (maxrcscore > 40) {
-    rcTScore.classList = "veryAg";
+    rcTScore.classList = 'veryAg';
   }
   if (maxrcscore > 30 && maxrcscore <= 40) {
-    rcTScore.classList = "aggressive";
+    rcTScore.classList = 'aggressive';
   }
   if (maxrcscore > 20 && maxrcscore <= 30) {
-    rcTScore.classList = "moderate";
+    rcTScore.classList = 'moderate';
   }
   if (maxrcscore > 10 && maxrcscore <= 20) {
-    rcTScore.classList = "conservative";
+    rcTScore.classList = 'conservative';
   }
   if (maxrcscore <= 10) {
-    rcTScore.classList = "veryCon";
+    rcTScore.classList = 'veryCon';
   }
   // Risk Tolerance Score Begins
-  let rtTScore = document.getElementById("rtTotalScore");
+  let rtTScore = document.getElementById('rtTotalScore');
   rtTScore.innerHTML = maxrtscore;
 
   if (maxrtscore > 40) {
-    rtTScore.classList = "veryAg";
+    rtTScore.classList = 'veryAg';
   }
   if (maxrtscore > 30 && maxrtscore <= 40) {
-    rtTScore.classList = "aggressive";
+    rtTScore.classList = 'aggressive';
   }
   if (maxrtscore > 20 && maxrtscore <= 30) {
-    rtTScore.classList = "moderate";
+    rtTScore.classList = 'moderate';
   }
   if (maxrtscore > 10 && maxrtscore <= 20) {
-    rtTScore.classList = "conservative";
+    rtTScore.classList = 'conservative';
   }
   if (maxrtscore <= 10) {
-    rtTScore.classList = "veryCon";
+    rtTScore.classList = 'veryCon';
   }
 
   // Full Risk Profile Score
 
-  let rpTScore = document.getElementById("rpTotalScore");
+  let rpTScore = document.getElementById('rpTotalScore');
   rpTScore.innerHTML = totalScore;
   if (totalScore > 80) {
-    rpTScore.classList = "veryAg";
+    rpTScore.classList = 'veryAg';
   }
   if (totalScore > 60 && totalScore <= 80) {
-    rpTScore.classList = "aggressive";
+    rpTScore.classList = 'aggressive';
   }
   if (totalScore > 40 && totalScore <= 60) {
-    rpTScore.classList = "moderate";
+    rpTScore.classList = 'moderate';
   }
   if (totalScore > 20 && totalScore <= 40) {
-    rpTScore.classList = "conservative";
+    rpTScore.classList = 'conservative';
   }
   if (totalScore <= 20) {
-    rpTScore.classList = "veryCon";
+    rpTScore.classList = 'veryCon';
   }
-
-
 }
 
 // side swipe panels
