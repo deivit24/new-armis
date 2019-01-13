@@ -65,7 +65,7 @@
 
     .form-contain {
       padding: 25px 20px;
-      margin-top: 50px;
+      margin: auto auto;
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
       transition: transform 0.1s ease-in-out;
@@ -168,6 +168,23 @@
               }
             }
           }
+        }
+      }
+
+
+    }
+
+    #table {
+      #new-form {
+        padding-top: 0px;
+        margin-top: 0px;
+
+        .your-RT {
+          width: 75%;
+        }
+
+        .your-RC {
+          width: 75%;
         }
       }
     }

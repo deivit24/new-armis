@@ -1712,7 +1712,7 @@ a[href^="http://www.armisgrowth.com"] {
     display: none; }
   #risk-profile-questions .form-contain {
     padding: 25px 20px;
-    margin-top: 50px;
+    margin: auto auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     transition: transform 0.1s ease-in-out;
@@ -1787,6 +1787,13 @@ a[href^="http://www.armisgrowth.com"] {
           background-color: #d89e04; }
           #risk-profile-questions .form-contain .question .contain input:checked ~ .checkmark:after {
             display: block; }
+  #risk-profile-questions #table #new-form {
+    padding-top: 0px;
+    margin-top: 0px; }
+    #risk-profile-questions #table #new-form .your-RT {
+      width: 75%; }
+    #risk-profile-questions #table #new-form .your-RC {
+      width: 75%; }
   #risk-profile-questions #quiz #confirm_answer {
     margin-left: 150px; }
     #risk-profile-questions #quiz #confirm_answer a {
