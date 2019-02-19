@@ -298,105 +298,137 @@ section.sec1 {
   padding: 0px;
   margin: 50px auto;
   text-align: center;
-  vertical-align: middle;
 
-  // pictures on block css and animation
-  .picblock {
+
+  .row {
     margin-bottom: 75px;
-    text-align: center;
-    vertical-align: middle;
 
     &:nth-child(1) {
-      height: 300px;
-      width: 100%;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/transparent.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transform: translateX(-500px);
-      transition: all 2s ease-out;
+      .picblock {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(../img/transparent.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transform: translateX(-500px);
+        transition: all 2s ease-out;
+      }
     }
 
-    &:nth-child(4) {
-      height: 300px;
-      width: 100%;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(34, 3, 3, 0.5)),
-        url(../img/mutualfunds.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
+    &:nth-child(2) {
+      .picblock {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(34, 3, 3, 0.5)),
+          url(../img/mutualfunds.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transform: translateX(0px);
+        transition: all 2s ease-out;
+      }
+    }
+
+    &:nth-child(3) {
+      .picblock {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(../img/risk.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: translateX(-500px);
+        opacity: 0;
+        transition: all 2s ease-out;
+      }
+    }
+
+    .picblock.slide {
       transform: translateX(0px);
-      transition: all 2s ease-out;
-    }
-
-    &:nth-child(5) {
-      height: 300px;
-      width: 100%;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/risk.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      transform: translateX(-500px);
-      opacity: 0;
-      transition: all 2s ease-out;
-    }
-  }
-
-  .picblock.slide {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-
-  .pic-heading {
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 125px;
-    font-family: $main-font;
-
-    .gold {
-      color: $secondary-color;
-      opacity: 0;
-      background-blend-mode: darken;
-      font-size: 1.8rem;
-      transition: all 1s ease-in-out;
-    }
-
-    .gold-appear {
       opacity: 1;
     }
-  }
 
-  .textblock {
-    text-align: center;
-
-    transition: all 2s ease-in-out;
-    font-size: 0rem;
-    margin-top: 25px;
-    opacity: 0;
-  }
-
-  .text-appear {
-    transform: translateY(0px);
-    opacity: 1;
-    font-size: 1.3rem;
-  }
-
-  .btn {
-    background: transparent;
-    border: 1px solid black;
-    color: black;
-
-    &:hover {
-      background: $secondary-color;
-      cursor: pointer;
+    .pic-heading {
       color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 125px;
+      font-family: $main-font;
+
+      .gold {
+        color: $secondary-color;
+        opacity: 0;
+        background-blend-mode: darken;
+        font-size: 1.8rem;
+        transition: all 1s ease-in-out;
+      }
+
+      .gold-appear {
+        opacity: 1;
+      }
+    }
+
+    .textblock {
+      text-align: center;
+      transform: translateY(-100px);
+      transition: all 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 25px;
+      opacity: 0;
+
+      p {
+        padding: 0px 25px;
+      }
+    }
+
+    .text-appear {
+      transform: translateY(0px);
+      opacity: 1;
+
+    }
+
+    .btn {
+      background: transparent;
+      border: 1px solid black;
+      color: black;
+      width: 150px;
+      margin: 0 auto;
+
+      &:hover {
+        background: $secondary-color;
+        cursor: pointer;
+        color: white;
+      }
     }
   }
+
+
+
+
+
+
 }
 
 .wrapper2 {
