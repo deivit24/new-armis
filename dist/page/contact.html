@@ -5,21 +5,23 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Armis Financial offers comprehensive financial advice and asset management services to individuals, businesses and families across the country from our home base in Austin, Texas. My mission is to partner up with clients and help them build a financial plan during their accumulation, preservation and transferring phases of life—all while being prudent, objective and tailored towards their goals.">
-  <meta name="keywords" content="retirement, etfs, fee-only, fee-based, fees, IRA, wealth, financial advisor, DINKS, Millenials, investing, Austin RIA, Austin Financial Advisor, Armis Financial">
+  <meta name="description"
+    content="Armis Financial offers comprehensive financial advice and asset management services to individuals, businesses and families across the country from our home base in Austin, Texas. My mission is to partner up with clients and help them build a financial plan during their accumulation, preservation and transferring phases of life—all while being prudent, objective and tailored towards their goals.">
+  <meta name="keywords"
+    content="retirement, etfs, fee-only, fee-based, fees, IRA, wealth, financial advisor, DINKS, Millenials, investing, Austin RIA, Austin Financial Advisor, Armis Financial">
   <meta name="author" content="David Salazar">
 
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Ubuntu" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../css/main.css">
@@ -28,11 +30,14 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130031948-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-130031948-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130031948-1');
+  </script>
 
 
   <title>Armis Financial | Our Fees</title>
@@ -132,50 +137,49 @@
 
 
   <main id="contact">
-    <div class="container contact-me">
-      <form>
-        <div id="form-box">
-          <i id="prev-btn" class="fas fa-arrow-left"></i>
-          <i id="next-btn" class="fas fa-arrow-right"></i>
-          <div id="input-group">
-            <input id="input-field" required>
-            <label id="input-label"></label>
-            <div id="input-progress"></div>
+    <div class="container">
+      <form name="contact2019" method="POST" data-netlify="true">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+
+            <input type="text" class="form-control" id="Fname" placeholder="First Name" name="First Name">
           </div>
-          <div id="progress-bar"></div>
+          <div class="form-group col-md-6">
+
+            <input type="text" class="form-control" id="Lname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+
+            <input type="email" class="form-control" id="Email" placeholder="Email" name="email" required>
+          </div>
+          <div class="form-group col-md-6">
+
+            <input type="number" class="form-control" id="phone" placeholder="Phone Number (optional)" name="phone">
+          </div>
+        </div>
+        <div class="form-row">
+
+
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter Message" name="message"
+            required></textarea>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
-      </form>
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="English" id="inlineRadio1" value="English">
+            <label class="form-check-label" for="inlineRadio1">English</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Spanish" id="inlineRadio2" value="Spanish">
+            <label class="form-check-label" for="inlineRadio2">Spanish</label>
+          </div>
+        </div>
 
-    </div>
-    <div id="message">
-      <div class="container">
-        <form name="contact" method="POST" netlify>
-          <p>Hello <span><input name="first-name" type="text" id="q1"></span> <span><input type="text" name="last-name"
-                id="q2"></span>, Armis Financial will
-            be reaching out to you within the
-            next 24 hours. We will reach out to you at <span><input type="text" id="q3" name="email"></span>. The
-            Message
-            that we will send
-            to Armis Financial is:</p> <br>
-          <p><span class="italic"><textarea type="text" id="q4" name="message"></textarea></span></p> <br>
-          <p>If all of this is correct, please click on send. If not, you can click on the mistake and correct it. </p>
-          <p>Please select your preferred langauge</p>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="language" id="english" value="English">
-            <label class="form-check-label" for="language">
-              English
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="language" id="spanish" value="Spanish">
-            <label class="form-check-label" for="language">
-              Spanish
-            </label>
-          </div>
-          <button id="button" type="submit"> Send</button>
-        </form>
-      </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     </div>
 
   </main>
@@ -220,7 +224,8 @@
       <br>
       <p class="foot">Armis Financial LLC, Copyright &copy; 2018 is a Texas registered investment adviser under the
         Investment Advisers Act of 1940 and uses Interactive Brokers for Armis Financial accounts. Interactive Brokers
-        LLC is a member <a href="https://www.nyse.com">NYSE-</a><a href="http://finra.org">FINRA-</a><a href="https://www.sipc.org">SIPC</a>
+        LLC is a member <a href="https://www.nyse.com">NYSE-</a><a href="http://finra.org">FINRA-</a><a
+          href="https://www.sipc.org">SIPC</a>
         and is regulated by the US Securities and Exchange Commision and the Commodity Futures Trading Commision.
         Interactive Brokers is a member of the Securities Investor Protection Corporation (SIPC), which provides funds
         to meet claims up to a ceiling of $500,000, including a maximum of $250,000 for cash claims. For additional
@@ -235,12 +240,15 @@
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>

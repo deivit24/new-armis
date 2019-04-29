@@ -1162,26 +1162,44 @@ a[href^="http://www.armisgrowth.com"] {
           color: #d89e04;
           cursor: pointer;
           font-weight: bold; }
-  #info #contact {
-    padding: 50px 0px;
-    height: 100%; }
-    #info #contact .contact-me #firstBox {
-      text-align: center;
-      background: #fde7ab;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 20px; }
-      #info #contact .contact-me #firstBox img {
-        width: 250px; }
-      #info #contact .contact-me #firstBox p {
-        font-family: 'Raleway';
-        font-size: 1.5rem;
-        color: black;
-        font-weight: bold; }
-    #info #contact .contact-me #secondBox {
-      border: #fde7ab 1px solid;
-      padding: 25px; }
+  #info #contact .container form {
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    margin: -150px auto 0px auto; }
+    #info #contact .container form:hover,
+    #info #contact .container form :focus,
+    #info #contact .container form :active {
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08); }
+    #info #contact .container form input {
+      border: 0;
+      border-bottom: #d89e04 3px solid;
+      outline: 0; }
+      #info #contact .container form input:active {
+        border-bottom: green 3px solid; }
+      #info #contact .container form input:focus {
+        border-bottom: green 3px solid; }
+      #info #contact .container form input:visited {
+        border-bottom: green 3px solid; }
+    #info #contact .container form textarea {
+      margin-top: 10px;
+      outline: 0;
+      border: 0;
+      border-bottom: #d89e04 3px solid; }
+      #info #contact .container form textarea:active {
+        border-bottom: green 3px solid; }
+      #info #contact .container form textarea:focus {
+        border-bottom: green 3px solid; }
+      #info #contact .container form textarea:visited {
+        border-bottom: green 3px solid; }
+    #info #contact .container form .btn-primary {
+      background: #d89e04;
+      outline: 0;
+      border: 0; }
+      #info #contact .container form .btn-primary:hover {
+        background: white;
+        border: 2px black solid;
+        color: black; }
 
 #risk-profile-questions #sec1 {
   display: flex;
@@ -2485,4 +2503,9 @@ footer {
   h3 {
     font-size: 20px !important; }
   p {
-    font-size: 1rem !important; } }
+    font-size: 1rem !important; }
+  #info #contact .container form {
+    padding: 25px;
+    margin: 0 auto 50px auto; }
+    #info #contact .container form small {
+      margin-bottom: 10px; } }
