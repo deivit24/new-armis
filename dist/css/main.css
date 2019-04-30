@@ -897,7 +897,8 @@ a[href^="http://www.armisgrowth.com"] {
     transition: all 1s ease-in-out;
     z-index: -1;
     opacity: 0;
-    border-bottom: 2px solid #d89e04; }
+    border-bottom: 2px solid #d89e04;
+    margin-top: -50px !important; }
   #philosophy .appear {
     opacity: 1 !important;
     z-index: 2 !important; }
