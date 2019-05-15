@@ -1,9 +1,9 @@
-$('.menu-btn').on('click', function() {
+$('.menu-btn').on('click', function () {
   $(this).toggleClass('close');
   $('.menu').toggleClass('show');
   $('.menu-nav').toggleClass('show');
   $('.menu-branding').toggleClass('show');
-  $('.nav-item').each(function() {
+  $('.nav-item').each(function () {
     $(this).toggleClass('show');
   });
 });
@@ -66,26 +66,26 @@ var navLink = new ScrollMagic.Controller();
 
 // build a scene
 var ourScene = new ScrollMagic.Scene({
-  triggerElement: '.btn',
-  triggerHook: 0.4
-})
+    triggerElement: '.btn',
+    triggerHook: 0.4
+  })
   .setClassToggle('#project01', 'fade-in')
 
   .addTo(scene);
 
 var navScroll = new ScrollMagic.Scene({
-  triggerElement: '.btn',
-  triggerHook: 0.4
-})
+    triggerElement: '.btn',
+    triggerHook: 0.4
+  })
 
   .setClassToggle('.navbar', 'black')
 
   .addTo(nav);
 
 var linkScroll = new ScrollMagic.Scene({
-  triggerElement: '.btn',
-  triggerHook: 0.4
-})
+    triggerElement: '.btn',
+    triggerHook: 0.4
+  })
   .setClassToggle('.nav-link', 'color')
 
   .addTo(navLink);
@@ -95,11 +95,11 @@ var linkScroll = new ScrollMagic.Scene({
 // transparent block
 var picblock = new ScrollMagic.Controller();
 
-$('.picblock').each(function() {
+$('.picblock').each(function () {
   var blockSlide = new ScrollMagic.Scene({
-    triggerElement: this,
-    reverse: false
-  })
+      triggerElement: this,
+      reverse: false
+    })
     .setClassToggle(this, 'slide')
 
     .addTo(picblock);
@@ -109,10 +109,10 @@ $('.picblock').each(function() {
 
 var picgold = new ScrollMagic.Controller();
 
-$('.gold').each(function() {
+$('.gold').each(function () {
   var goldSlide = new ScrollMagic.Scene({
-    triggerElement: this
-  })
+      triggerElement: this
+    })
     .setClassToggle(this, 'gold-appear')
 
     .addTo(picgold);
@@ -122,11 +122,11 @@ $('.gold').each(function() {
 
 var blocktext = new ScrollMagic.Controller();
 
-$('.textblock').each(function() {
+$('.textblock').each(function () {
   var textSlide = new ScrollMagic.Scene({
-    triggerElement: this,
-    reverse: false
-  })
+      triggerElement: this,
+      reverse: false
+    })
     .setClassToggle(this, 'text-appear')
 
     .addTo(blocktext);
@@ -152,7 +152,7 @@ $('.textblock').each(function() {
 //
 // .addTo(text1);
 
-const TypeWriter = function(txtElement, words, wait = 3000) {
+const TypeWriter = function (txtElement, words, wait = 1000) {
   this.txtElement = txtElement;
   this.words = words;
   this.txt = '';
@@ -163,7 +163,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
 };
 
 // Type Method
-TypeWriter.prototype.type = function() {
+TypeWriter.prototype.type = function () {
   // Current Index of Word
   const current = this.wordIndex % this.words.length;
   // Get Full Text od Current Word
@@ -182,7 +182,7 @@ TypeWriter.prototype.type = function() {
   this.txtElement.innerHTML = `<span class="text">${this.txt}</span>`;
 
   // Initial Type Speed
-  let typeSpeed = 200;
+  let typeSpeed = 100;
 
   if (this.isDeleting) {
     typeSpeed /= 2;

@@ -370,15 +370,15 @@ section.sec1 {
 
     .pic-heading {
       color: white;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       text-align: center;
-      margin-top: 125px;
+      margin-top: 15%;
       font-family: $main-font;
 
       .gold {
-        color: $secondary-color;
+        color: lighten($secondary-color, 10);
         opacity: 0;
-        background-blend-mode: darken;
+
         font-size: 1.8rem;
         transition: all 1s ease-in-out;
       }

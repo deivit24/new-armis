@@ -129,6 +129,9 @@ a[href^="http://www.armisgrowth.com"] {
 .nav-item:nth-child(7) {
   transition-delay: 0.7s; }
 
+.nav-item:nth-child(8) {
+  transition-delay: 0.8s; }
+
 #about-firm .navbar-brand {
   margin-top: -12px; }
 
@@ -657,14 +660,16 @@ a[href^="http://www.armisgrowth.com"] {
   background: url(../img/background.jpg) top center no-repeat;
   background-attachment: fixed;
   height: 100%; }
-  #portfolio-services .pm p {
-    margin-bottom: 50px;
-    color: #333;
-    font-size: 1.2rem; }
-  #portfolio-services .pm h2 {
-    margin-top: 50px;
-    text-align: center;
-    color: #a67903; }
+  #portfolio-services .pm {
+    padding-top: 50px; }
+    #portfolio-services .pm p {
+      margin-bottom: 50px;
+      color: #333;
+      font-size: 1.2rem; }
+    #portfolio-services .pm h2 {
+      margin-top: 50px;
+      text-align: center;
+      color: #a67903; }
   #portfolio-services .asset {
     text-align: center; }
     #portfolio-services .asset .row {
@@ -680,7 +685,9 @@ a[href^="http://www.armisgrowth.com"] {
       #portfolio-services .asset .row .a-block {
         transition: all 1s ease-in;
         opacity: 0;
-        transform: translateY(300px); }
+        transform: translateY(300px);
+        max-width: 500px;
+        margin: 0 auto; }
       #portfolio-services .asset .row .a-block-appear {
         opacity: 1;
         transform: translateY(0px); }
@@ -2324,14 +2331,13 @@ section.sec1 {
       opacity: 1; }
     .wrapper1 .row .pic-heading {
       color: white;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       text-align: center;
-      margin-top: 125px;
+      margin-top: 15%;
       font-family: "Ubuntu", sans-serif; }
       .wrapper1 .row .pic-heading .gold {
-        color: #d89e04;
+        color: #fbbc14;
         opacity: 0;
-        background-blend-mode: darken;
         font-size: 1.8rem;
         transition: all 1s ease-in-out; }
       .wrapper1 .row .pic-heading .gold-appear {
@@ -2486,17 +2492,6 @@ footer {
     font-size: 20px;
     text-transform: uppercase;
     padding: 0.5rem 0; }
-  #main * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-    -webkit-transform: none !important;
-    -moz-transform: none !important;
-    -o-transform: none !important;
-    -ms-transform: none !important;
-    transform: none !important; }
   h1 {
     font-size: 25px !important; }
   h2 {
@@ -2505,6 +2500,8 @@ footer {
     font-size: 20px !important; }
   p {
     font-size: 1rem !important; }
+  .pic-heading {
+    font-size: 1.5rem !important; }
   #info #contact .container form {
     padding: 25px;
     margin: 0 auto 50px auto; }
